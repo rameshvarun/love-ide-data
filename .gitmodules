@@ -1,0 +1,9 @@
+[submodule "love-api"]
+	path = love-api
+	url = https://github.com/love2d-community/love-api.git
+[submodule "underscore.lua"]
+	path = underscore.lua
+	url = https://github.com/mirven/underscore.lua.git
+[submodule "dkjson"]
+	path = dkjson
+	url = https://github.com/LuaDist/dkjson.git

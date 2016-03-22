@@ -1,0 +1,1814 @@
+{
+  "love":{
+    "description":"The root LOVE module.",
+    "type":"module",
+    "url":"https://love2d.org/wiki/love"
+  },
+  "love.audio":{
+    "description":"Provides an interface to create noise with the user's speakers.",
+    "type":"module",
+    "url":"https://love2d.org/wiki/love.audio"
+  },
+  "love.audio.getDistanceModel":{
+    "description":"Returns the distance attenuation model.",
+    "snippet":"love.audio.getDistanceModel()",
+    "type":"function",
+    "url":"https://love2d.org/wiki/love.audio.getDistanceModel"
+  },
+  "love.audio.getDopplerScale":{
+    "description":"Gets the current global scale factor for velocity-based doppler effects.",
+    "snippet":"love.audio.getDopplerScale()",
+    "type":"function",
+    "url":"https://love2d.org/wiki/love.audio.getDopplerScale"
+  },
+  "love.audio.getOrientation":{
+    "description":"Returns the orientation of the listener.",
+    "snippet":"love.audio.getOrientation()",
+    "type":"function",
+    "url":"https://love2d.org/wiki/love.audio.getOrientation"
+  },
+  "love.audio.getPosition":{
+    "description":"Returns the position of the listener.",
+    "snippet":"love.audio.getPosition()",
+    "type":"function",
+    "url":"https://love2d.org/wiki/love.audio.getPosition"
+  },
+  "love.audio.getSourceCount":{
+    "description":"Returns the number of sources which are currently playing or paused.",
+    "snippet":"love.audio.getSourceCount()",
+    "type":"function",
+    "url":"https://love2d.org/wiki/love.audio.getSourceCount"
+  },
+  "love.audio.getVelocity":{
+    "description":"Returns the velocity of the listener.",
+    "snippet":"love.audio.getVelocity()",
+    "type":"function",
+    "url":"https://love2d.org/wiki/love.audio.getVelocity"
+  },
+  "love.audio.getVolume":{
+    "description":"Returns the master volume.",
+    "snippet":"love.audio.getVolume()",
+    "type":"function",
+    "url":"https://love2d.org/wiki/love.audio.getVolume"
+  },
+  "love.audio.newSource":{
+    "description":"Creates a new Source from a file or SoundData. Sources created from SoundData are always static.",
+    "snippet":"love.audio.newSource(${1:filename}, ${2:type})",
+    "type":"function",
+    "url":"https://love2d.org/wiki/love.audio.newSource"
+  },
+  "love.audio.pause":{
+    "description":"Pauses all audio",
+    "snippet":"love.audio.pause()",
+    "type":"function",
+    "url":"https://love2d.org/wiki/love.audio.pause"
+  },
+  "love.audio.play":{
+    "description":"Plays the specified Source.",
+    "snippet":"love.audio.play(${1:source})",
+    "type":"function",
+    "url":"https://love2d.org/wiki/love.audio.play"
+  },
+  "love.audio.resume":{
+    "description":"Resumes all audio",
+    "snippet":"love.audio.resume()",
+    "type":"function",
+    "url":"https://love2d.org/wiki/love.audio.resume"
+  },
+  "love.audio.rewind":{
+    "description":"Rewinds all playing audio.",
+    "snippet":"love.audio.rewind()",
+    "type":"function",
+    "url":"https://love2d.org/wiki/love.audio.rewind"
+  },
+  "love.audio.setDistanceModel":{
+    "description":"Sets the distance attenuation model.",
+    "snippet":"love.audio.setDistanceModel(${1:model})",
+    "type":"function",
+    "url":"https://love2d.org/wiki/love.audio.setDistanceModel"
+  },
+  "love.audio.setDopplerScale":{
+    "description":"Sets a global scale factor for velocity-based doppler effects. The default scale value is 1.",
+    "snippet":"love.audio.setDopplerScale(${1:scale})",
+    "type":"function",
+    "url":"https://love2d.org/wiki/love.audio.setDopplerScale"
+  },
+  "love.audio.setOrientation":{
+    "description":"Sets the orientation of the listener.",
+    "snippet":"love.audio.setOrientation(${1:fx}, ${2:fy}, ${3:fz}, ${4:ux}, ${5:uy}, ${6:uz})",
+    "type":"function",
+    "url":"https://love2d.org/wiki/love.audio.setOrientation"
+  },
+  "love.audio.setPosition":{
+    "description":"Sets the position of the listener, which determines how sounds play.",
+    "snippet":"love.audio.setPosition(${1:x}, ${2:y}, ${3:z})",
+    "type":"function",
+    "url":"https://love2d.org/wiki/love.audio.setPosition"
+  },
+  "love.audio.setVelocity":{
+    "description":"Sets the velocity of the listener.",
+    "snippet":"love.audio.setVelocity(${1:x}, ${2:y}, ${3:z})",
+    "type":"function",
+    "url":"https://love2d.org/wiki/love.audio.setVelocity"
+  },
+  "love.audio.setVolume":{
+    "description":"Sets the master volume.",
+    "snippet":"love.audio.setVolume(${1:volume})",
+    "type":"function",
+    "url":"https://love2d.org/wiki/love.audio.setVolume"
+  },
+  "love.audio.stop":{
+    "description":"Stops all playing audio.",
+    "snippet":"love.audio.stop()",
+    "type":"function",
+    "url":"https://love2d.org/wiki/love.audio.stop"
+  },
+  "love.directorydropped":{
+    "description":"Callback function triggered when a directory is dragged and dropped onto the window.",
+    "snippet":"function love.directorydropped(${1:path})\n\t${0:-- body...}\nend",
+    "type":"callback",
+    "url":"https://love2d.org/wiki/love.directorydropped"
+  },
+  "love.draw":{
+    "description":"Callback function used to draw on the screen every frame.",
+    "snippet":"function love.draw()\n\t${0:-- body...}\nend",
+    "type":"callback",
+    "url":"https://love2d.org/wiki/love.draw"
+  },
+  "love.errhand":{
+    "description":"The error handler, used to display error messages.",
+    "snippet":"function love.errhand(${1:msg})\n\t${0:-- body...}\nend",
+    "type":"callback",
+    "url":"https://love2d.org/wiki/love.errhand"
+  },
+  "love.event":{
+    "description":"Manages events, like keypresses.",
+    "type":"module",
+    "url":"https://love2d.org/wiki/love.event"
+  },
+  "love.event.clear":{
+    "description":"Clears the event queue.",
+    "snippet":"love.event.clear()",
+    "type":"function",
+    "url":"https://love2d.org/wiki/love.event.clear"
+  },
+  "love.event.poll":{
+    "description":"Returns an iterator for messages in the event queue.",
+    "snippet":"love.event.poll()",
+    "type":"function",
+    "url":"https://love2d.org/wiki/love.event.poll"
+  },
+  "love.event.pump":{
+    "description":"Pump events into the event queue. This is a low-level function, and is usually not called by the user, but by love.run. Note that this does need to be called for any OS to think you're still running, and if you want to handle OS-generated events at all (think callbacks). love.event.pump can only be called from the main thread, but afterwards, the rest of love.event can be used from any other thread.",
+    "snippet":"love.event.pump()",
+    "type":"function",
+    "url":"https://love2d.org/wiki/love.event.pump"
+  },
+  "love.event.push":{
+    "description":"Adds an event to the event queue.",
+    "snippet":"love.event.push(${1:e}, ${2:a}, ${3:b}, ${4:c}, ${5:d})",
+    "type":"function",
+    "url":"https://love2d.org/wiki/love.event.push"
+  },
+  "love.event.quit":{
+    "description":"Adds the quit event to the queue.\n\nThe quit event is a signal for the event handler to close LÖVE. It's possible to abort the exit process with the love.quit callback.",
+    "snippet":"love.event.quit(${1:exitstatus})",
+    "type":"function",
+    "url":"https://love2d.org/wiki/love.event.quit"
+  },
+  "love.event.wait":{
+    "description":"Like love.event.poll but blocks until there is an event in the queue.",
+    "snippet":"love.event.wait()",
+    "type":"function",
+    "url":"https://love2d.org/wiki/love.event.wait"
+  },
+  "love.filedropped":{
+    "description":"Callback function triggered when a file is dragged and dropped onto the window.",
+    "snippet":"function love.filedropped(${1:file})\n\t${0:-- body...}\nend",
+    "type":"callback",
+    "url":"https://love2d.org/wiki/love.filedropped"
+  },
+  "love.filesystem":{
+    "description":"Provides an interface to the user's filesystem.",
+    "type":"module",
+    "url":"https://love2d.org/wiki/love.filesystem"
+  },
+  "love.filesystem.append":{
+    "description":"Append data to an existing file.",
+    "snippet":"love.filesystem.append(${1:name}, ${2:data}, ${3:size})",
+    "type":"function",
+    "url":"https://love2d.org/wiki/love.filesystem.append"
+  },
+  "love.filesystem.areSymlinksEnabled":{
+    "description":"Gets whether love.filesystem follows symbolic links.",
+    "snippet":"love.filesystem.areSymlinksEnabled()",
+    "type":"function",
+    "url":"https://love2d.org/wiki/love.filesystem.areSymlinksEnabled"
+  },
+  "love.filesystem.createDirectory":{
+    "description":"Creates a directory.",
+    "snippet":"love.filesystem.createDirectory(${1:name})",
+    "type":"function",
+    "url":"https://love2d.org/wiki/love.filesystem.createDirectory"
+  },
+  "love.filesystem.exists":{
+    "description":"Check whether a file or directory exists.",
+    "snippet":"love.filesystem.exists(${1:filename})",
+    "type":"function",
+    "url":"https://love2d.org/wiki/love.filesystem.exists"
+  },
+  "love.filesystem.getAppdataDirectory":{
+    "description":"Returns the application data directory (could be the same as getUserDirectory)",
+    "snippet":"love.filesystem.getAppdataDirectory()",
+    "type":"function",
+    "url":"https://love2d.org/wiki/love.filesystem.getAppdataDirectory"
+  },
+  "love.filesystem.getDirectoryItems":{
+    "description":"Returns a table with the names of files and subdirectories in the specified path. The table is not sorted in any way; the order is undefined.\n\nIf the path passed to the function exists in the game and the save directory, it will list the files and directories from both places.",
+    "snippet":"love.filesystem.getDirectoryItems(${1:dir})",
+    "type":"function",
+    "url":"https://love2d.org/wiki/love.filesystem.getDirectoryItems"
+  },
+  "love.filesystem.getIdentity":{
+    "description":"Gets the write directory name for your game. Note that this only returns the name of the folder to store your files in, not the full location.",
+    "snippet":"love.filesystem.getIdentity(${1:name})",
+    "type":"function",
+    "url":"https://love2d.org/wiki/love.filesystem.getIdentity"
+  },
+  "love.filesystem.getLastModified":{
+    "description":"Gets the last modification time of a file.",
+    "snippet":"love.filesystem.getLastModified(${1:filename})",
+    "type":"function",
+    "url":"https://love2d.org/wiki/love.filesystem.getLastModified"
+  },
+  "love.filesystem.getRealDirectory":{
+    "description":"Gets the platform-specific absolute path of the directory containing a filepath.\n\nThis can be used to determine whether a file is inside the save directory or the game's source .love.",
+    "snippet":"love.filesystem.getRealDirectory(${1:filepath})",
+    "type":"function",
+    "url":"https://love2d.org/wiki/love.filesystem.getRealDirectory"
+  },
+  "love.filesystem.getRequirePath":{
+    "description":"Gets the filesystem paths that will be searched when require is called.\n\nThe paths string returned by this function is a sequence of path templates separated by semicolons. The argument passed to require will be inserted in place of any question mark (\"?\") character in each template (after the dot characters in the argument passed to require are replaced by directory separators.)\n\nThe paths are relative to the game's source and save directories, as well as any paths mounted with love.filesystem.mount.",
+    "snippet":"love.filesystem.getRequirePath()",
+    "type":"function",
+    "url":"https://love2d.org/wiki/love.filesystem.getRequirePath"
+  },
+  "love.filesystem.getSaveDirectory":{
+    "description":"Gets the full path to the designated save directory. This can be useful if you want to use the standard io library (or something else) to read or write in the save directory.",
+    "snippet":"love.filesystem.getSaveDirectory()",
+    "type":"function",
+    "url":"https://love2d.org/wiki/love.filesystem.getSaveDirectory"
+  },
+  "love.filesystem.getSize":{
+    "description":"Gets the size in bytes of a file.",
+    "snippet":"love.filesystem.getSize(${1:filename})",
+    "type":"function",
+    "url":"https://love2d.org/wiki/love.filesystem.getSize"
+  },
+  "love.filesystem.getSourceBaseDirectory":{
+    "description":"Returns the full path to the directory containing the .love file. If the game is fused to the LÖVE executable, then the directory containing the executable is returned.\n\nIf love.filesystem.isFused is true, the path returned by this function can be passed to love.filesystem.mount, which will make the directory containing the main game readable by love.filesystem.",
+    "snippet":"love.filesystem.getSourceBaseDirectory()",
+    "type":"function",
+    "url":"https://love2d.org/wiki/love.filesystem.getSourceBaseDirectory"
+  },
+  "love.filesystem.getUserDirectory":{
+    "description":"Returns the path of the user's directory.",
+    "snippet":"love.filesystem.getUserDirectory()",
+    "type":"function",
+    "url":"https://love2d.org/wiki/love.filesystem.getUserDirectory"
+  },
+  "love.filesystem.getWorkingDirectory":{
+    "description":"Gets the current working directory.",
+    "snippet":"love.filesystem.getWorkingDirectory()",
+    "type":"function",
+    "url":"https://love2d.org/wiki/love.filesystem.getWorkingDirectory"
+  },
+  "love.filesystem.isDirectory":{
+    "description":"Check whether something is a directory.",
+    "snippet":"love.filesystem.isDirectory(${1:path})",
+    "type":"function",
+    "url":"https://love2d.org/wiki/love.filesystem.isDirectory"
+  },
+  "love.filesystem.isFile":{
+    "description":"Check whether something is a file.",
+    "snippet":"love.filesystem.isFile(${1:path})",
+    "type":"function",
+    "url":"https://love2d.org/wiki/love.filesystem.isFile"
+  },
+  "love.filesystem.isFused":{
+    "description":"Gets whether the game is in fused mode or not.\n\nIf a game is in fused mode, its save directory will be directly in the Appdata directory instead of Appdata/LOVE/. The game will also be able to load C Lua dynamic libraries which are located in the save directory.\n\nA game is in fused mode if the source .love has been fused to the executable (see Game Distribution), or if \"--fused\" has been given as a command-line argument when starting the game.",
+    "snippet":"love.filesystem.isFused()",
+    "type":"function",
+    "url":"https://love2d.org/wiki/love.filesystem.isFused"
+  },
+  "love.filesystem.isSymlink":{
+    "description":"Gets whether a filepath is actually a symbolic link.\n\nIf symbolic links are not enabled (via love.filesystem.setSymlinksEnabled), this function will always return false.",
+    "snippet":"love.filesystem.isSymlink(${1:path})",
+    "type":"function",
+    "url":"https://love2d.org/wiki/love.filesystem.isSymlink"
+  },
+  "love.filesystem.lines":{
+    "description":"Iterate over the lines in a file.",
+    "snippet":"love.filesystem.lines(${1:name})",
+    "type":"function",
+    "url":"https://love2d.org/wiki/love.filesystem.lines"
+  },
+  "love.filesystem.load":{
+    "description":"Load a file (but not run it).",
+    "snippet":"love.filesystem.load(${1:name})",
+    "type":"function",
+    "url":"https://love2d.org/wiki/love.filesystem.load"
+  },
+  "love.filesystem.mount":{
+    "description":"Mounts a zip file or folder in the game's save directory for reading.",
+    "snippet":"love.filesystem.mount(${1:archive}, ${2:mountpoint})",
+    "type":"function",
+    "url":"https://love2d.org/wiki/love.filesystem.mount"
+  },
+  "love.filesystem.newFile":{
+    "description":"Creates a new File object. It needs to be opened before it can be accessed.",
+    "snippet":"love.filesystem.newFile(${1:filename}, ${2:mode})",
+    "type":"function",
+    "url":"https://love2d.org/wiki/love.filesystem.newFile"
+  },
+  "love.filesystem.newFileData":{
+    "description":"Creates a new FileData object.",
+    "snippet":"love.filesystem.newFileData(${1:contents}, ${2:name}, ${3:decoder})",
+    "type":"function",
+    "url":"https://love2d.org/wiki/love.filesystem.newFileData"
+  },
+  "love.filesystem.read":{
+    "description":"Read the contents of a file.",
+    "snippet":"love.filesystem.read(${1:name}, ${2:bytes})",
+    "type":"function",
+    "url":"https://love2d.org/wiki/love.filesystem.read"
+  },
+  "love.filesystem.remove":{
+    "description":"Removes a file or directory.",
+    "snippet":"love.filesystem.remove(${1:name})",
+    "type":"function",
+    "url":"https://love2d.org/wiki/love.filesystem.remove"
+  },
+  "love.filesystem.setIdentity":{
+    "description":"Sets the write directory for your game. Note that you can only set the name of the folder to store your files in, not the location.",
+    "snippet":"love.filesystem.setIdentity(${1:name}, ${2:appendToPath})",
+    "type":"function",
+    "url":"https://love2d.org/wiki/love.filesystem.setIdentity"
+  },
+  "love.filesystem.setRequirePath":{
+    "description":"Sets the filesystem paths that will be searched when require is called.\n\nThe paths string given to this function is a sequence of path templates separated by semicolons. The argument passed to require will be inserted in place of any question mark (\"?\") character in each template (after the dot characters in the argument passed to require are replaced by directory separators.)\n\nThe paths are relative to the game's source and save directories, as well as any paths mounted with love.filesystem.mount.",
+    "snippet":"love.filesystem.setRequirePath(${1:paths})",
+    "type":"function",
+    "url":"https://love2d.org/wiki/love.filesystem.setRequirePath"
+  },
+  "love.filesystem.setSource":{
+    "description":"Sets the source of the game, where the code is present. This function can only be called once, and is normally automatically done by LÖVE.",
+    "snippet":"love.filesystem.setSource(${1:path})",
+    "type":"function",
+    "url":"https://love2d.org/wiki/love.filesystem.setSource"
+  },
+  "love.filesystem.setSymlinksEnabled":{
+    "description":"Sets whether love.filesystem follows symbolic links. It is enabled by default in version 0.10.0 and newer, and disabled by default in 0.9.2.",
+    "snippet":"love.filesystem.setSymlinksEnabled(${1:enable})",
+    "type":"function",
+    "url":"https://love2d.org/wiki/love.filesystem.setSymlinksEnabled"
+  },
+  "love.filesystem.unmount":{
+    "description":"Unmounts a zip file or folder previously mounted for reading with love.filesystem.mount.",
+    "snippet":"love.filesystem.unmount(${1:archive})",
+    "type":"function",
+    "url":"https://love2d.org/wiki/love.filesystem.unmount"
+  },
+  "love.filesystem.write":{
+    "description":"Write data to a file.\n\nIf you are getting the error message \"Could not set write directory\", try setting the save directory. This is done either with love.filesystem.setIdentity or by setting the identity field in love.conf.",
+    "snippet":"love.filesystem.write(${1:name}, ${2:data}, ${3:size})",
+    "type":"function",
+    "url":"https://love2d.org/wiki/love.filesystem.write"
+  },
+  "love.focus":{
+    "description":"Callback function triggered when window receives or loses focus.",
+    "snippet":"function love.focus(${1:focus})\n\t${0:-- body...}\nend",
+    "type":"callback",
+    "url":"https://love2d.org/wiki/love.focus"
+  },
+  "love.gamepadaxis":{
+    "description":"Called when a Joystick's virtual gamepad axis is moved.",
+    "snippet":"function love.gamepadaxis(${1:joystick}, ${2:axis})\n\t${0:-- body...}\nend",
+    "type":"callback",
+    "url":"https://love2d.org/wiki/love.gamepadaxis"
+  },
+  "love.gamepadpressed":{
+    "description":"Called when a Joystick's virtual gamepad button is pressed.",
+    "snippet":"function love.gamepadpressed(${1:joystick}, ${2:button})\n\t${0:-- body...}\nend",
+    "type":"callback",
+    "url":"https://love2d.org/wiki/love.gamepadpressed"
+  },
+  "love.gamepadreleased":{
+    "description":"Called when a Joystick's virtual gamepad button is released.",
+    "snippet":"function love.gamepadreleased(${1:joystick}, ${2:button})\n\t${0:-- body...}\nend",
+    "type":"callback",
+    "url":"https://love2d.org/wiki/love.gamepadreleased"
+  },
+  "love.getVersion":{
+    "description":"Gets the current running version of LÖVE.",
+    "snippet":"love.getVersion()",
+    "type":"function",
+    "url":"https://love2d.org/wiki/love.getVersion"
+  },
+  "love.graphics":{
+    "description":"The primary responsibility for the love.graphics module is the drawing of lines, shapes, text, Images and other Drawable objects onto the screen. Its secondary responsibilities include loading external files (including Images and Fonts) into memory, creating specialized objects (such as ParticleSystems or Framebuffers) and managing screen geometry.\n\nLÖVE's coordinate system is rooted in the upper-left corner of the screen, which is at location (0, 0). The x-axis is horizontal: larger values are further to the right. The y-axis is vertical: larger values are further towards the bottom.\n\nIn many cases, you draw images or shapes in terms of their upper-left corner (See the picture above).\n\nMany of the functions are used to manipulate the graphics coordinate system, which is essentially the way coordinates are mapped to the display. You can change the position, scale, and even rotation in this way.",
+    "type":"module",
+    "url":"https://love2d.org/wiki/love.graphics"
+  },
+  "love.graphics.arc":{
+    "description":"Draws a filled or unfilled arc at position (x, y). The arc is drawn from angle1 to angle2 in radians. The segments parameter determines how many segments are used to draw the arc. The more segments, the smoother the edge.",
+    "snippet":"love.graphics.arc(${1:drawmode}, ${2:x}, ${3:y}, ${4:radius}, ${5:angle1}, ${6:angle2}, ${7:segments})",
+    "type":"function",
+    "url":"https://love2d.org/wiki/love.graphics.arc"
+  },
+  "love.graphics.circle":{
+    "description":"Draws a circle.",
+    "snippet":"love.graphics.circle(${1:mode}, ${2:x}, ${3:y}, ${4:radius}, ${5:segments})",
+    "type":"function",
+    "url":"https://love2d.org/wiki/love.graphics.circle"
+  },
+  "love.graphics.clear":{
+    "description":"Clears the screen to the background color in LÖVE 0.9.2 and earlier, or to the specified color in 0.10.0 and newer.\n\nThis function is called automatically before love.draw in the default love.run function. See the example in love.run for a typical use of this function.\n\nNote that the scissor area bounds the cleared region.",
+    "snippet":"love.graphics.clear()",
+    "type":"function",
+    "url":"https://love2d.org/wiki/love.graphics.clear"
+  },
+  "love.graphics.discard":{
+    "description":"Discards (trashes) the contents of the screen or active Canvas. This is a performance optimization function with niche use cases.\n\nIf the active Canvas has just been changed and the \"replace\" BlendMode is about to be used to draw something which covers the entire screen, calling love.graphics.discard rather than calling love.graphics.clear or doing nothing may improve performance on mobile devices.\n\nOn some desktop systems this function may do nothing.",
+    "snippet":"love.graphics.discard(${1:discardcolor}, ${2:discardstencil})",
+    "type":"function",
+    "url":"https://love2d.org/wiki/love.graphics.discard"
+  },
+  "love.graphics.draw":{
+    "description":"Draws a Drawable object (an Image, Canvas, SpriteBatch, ParticleSystem, Mesh, or Video) on the screen with optional rotation, scaling and shearing.\n\nObjects are drawn relative to their local coordinate system. The origin is by default located at the top left corner of Image and Canvas. All scaling, shearing, and rotation arguments transform the object relative to that point. Also, the position of the origin can be specified on the screen coordinate system.\n\nIt's possible to rotate an object about its center by offsetting the origin to the center. Angles must be given in radians for rotation. One can also use a negative scaling factor to flip about its centerline.\n\nNote that the offsets are applied before rotation, scaling, or shearing; scaling and shearing are applied before rotation.\n\nThe right and bottom edges of the object are shifted at an angle defined by the shearing factors.",
+    "snippet":"love.graphics.draw(${1:drawable}, ${2:x}, ${3:y}, ${4:r}, ${5:sx}, ${6:sy}, ${7:ox}, ${8:oy}, ${9:kx}, ${10:ky})",
+    "type":"function",
+    "url":"https://love2d.org/wiki/love.graphics.draw"
+  },
+  "love.graphics.ellipse":{
+    "description":"Draws an ellipse.",
+    "snippet":"love.graphics.ellipse(${1:mode}, ${2:x}, ${3:y}, ${4:radiusx}, ${5:radiusy})",
+    "type":"function",
+    "url":"https://love2d.org/wiki/love.graphics.ellipse"
+  },
+  "love.graphics.getBackgroundColor":{
+    "description":"Gets the current background color.",
+    "snippet":"love.graphics.getBackgroundColor()",
+    "type":"function",
+    "url":"https://love2d.org/wiki/love.graphics.getBackgroundColor"
+  },
+  "love.graphics.getBlendMode":{
+    "description":"Gets the blending mode.",
+    "snippet":"love.graphics.getBlendMode()",
+    "type":"function",
+    "url":"https://love2d.org/wiki/love.graphics.getBlendMode"
+  },
+  "love.graphics.getCanvas":{
+    "description":"Gets the current target Canvas.",
+    "snippet":"love.graphics.getCanvas()",
+    "type":"function",
+    "url":"https://love2d.org/wiki/love.graphics.getCanvas"
+  },
+  "love.graphics.getCanvasFormats":{
+    "description":"Gets the available Canvas formats, and whether each is supported.",
+    "snippet":"love.graphics.getCanvasFormats()",
+    "type":"function",
+    "url":"https://love2d.org/wiki/love.graphics.getCanvasFormats"
+  },
+  "love.graphics.getColor":{
+    "description":"Gets the current color.",
+    "snippet":"love.graphics.getColor()",
+    "type":"function",
+    "url":"https://love2d.org/wiki/love.graphics.getColor"
+  },
+  "love.graphics.getColorMask":{
+    "description":"Gets the active color components used when drawing. Normally all 4 components are active unless love.graphics.setColorMask has been used.\n\nThe color mask determines whether individual components of the colors of drawn objects will affect the color of the screen. They affect love.graphics.clear and Canvas:clear as well.",
+    "snippet":"love.graphics.getColorMask()",
+    "type":"function",
+    "url":"https://love2d.org/wiki/love.graphics.getColorMask"
+  },
+  "love.graphics.getCompressedImageFormats":{
+    "description":"Gets the available compressed image formats, and whether each is supported.",
+    "snippet":"love.graphics.getCompressedImageFormats()",
+    "type":"function",
+    "url":"https://love2d.org/wiki/love.graphics.getCompressedImageFormats"
+  },
+  "love.graphics.getDefaultFilter":{
+    "description":"Returns the default scaling filters used with Images, Canvases, and Fonts.",
+    "snippet":"love.graphics.getDefaultFilter()",
+    "type":"function",
+    "url":"https://love2d.org/wiki/love.graphics.getDefaultFilter"
+  },
+  "love.graphics.getDimensions":{
+    "description":"Gets the width and height of the window.",
+    "snippet":"love.graphics.getDimensions()",
+    "type":"function",
+    "url":"https://love2d.org/wiki/love.graphics.getDimensions"
+  },
+  "love.graphics.getFont":{
+    "description":"Gets the current Font object.",
+    "snippet":"love.graphics.getFont()",
+    "type":"function",
+    "url":"https://love2d.org/wiki/love.graphics.getFont"
+  },
+  "love.graphics.getHeight":{
+    "description":"Gets the height of the window.",
+    "snippet":"love.graphics.getHeight()",
+    "type":"function",
+    "url":"https://love2d.org/wiki/love.graphics.getHeight"
+  },
+  "love.graphics.getLineJoin":{
+    "description":"Gets the line join style.",
+    "snippet":"love.graphics.getLineJoin()",
+    "type":"function",
+    "url":"https://love2d.org/wiki/love.graphics.getLineJoin"
+  },
+  "love.graphics.getLineStyle":{
+    "description":"Gets the line style.",
+    "snippet":"love.graphics.getLineStyle()",
+    "type":"function",
+    "url":"https://love2d.org/wiki/love.graphics.getLineStyle"
+  },
+  "love.graphics.getLineWidth":{
+    "description":"Gets the current line width.",
+    "snippet":"love.graphics.getLineWidth()",
+    "type":"function",
+    "url":"https://love2d.org/wiki/love.graphics.getLineWidth"
+  },
+  "love.graphics.getPointSize":{
+    "description":"Gets the point size.",
+    "snippet":"love.graphics.getPointSize()",
+    "type":"function",
+    "url":"https://love2d.org/wiki/love.graphics.getPointSize"
+  },
+  "love.graphics.getRendererInfo":{
+    "description":"Gets information about the system's video card and drivers.",
+    "snippet":"love.graphics.getRendererInfo()",
+    "type":"function",
+    "url":"https://love2d.org/wiki/love.graphics.getRendererInfo"
+  },
+  "love.graphics.getScissor":{
+    "description":"Gets the current scissor box.",
+    "snippet":"love.graphics.getScissor()",
+    "type":"function",
+    "url":"https://love2d.org/wiki/love.graphics.getScissor"
+  },
+  "love.graphics.getShader":{
+    "description":"Returns the current Shader. Returns nil if none is set.",
+    "snippet":"love.graphics.getShader()",
+    "type":"function",
+    "url":"https://love2d.org/wiki/love.graphics.getShader"
+  },
+  "love.graphics.getStats":{
+    "description":"Gets performance-related rendering statistics.",
+    "snippet":"love.graphics.getStats()",
+    "type":"function",
+    "url":"https://love2d.org/wiki/love.graphics.getStats"
+  },
+  "love.graphics.getStencilTest":{
+    "description":"Gets whether stencil testing is enabled.\n\nWhen stencil testing is enabled, the geometry of everything that is drawn will be clipped / stencilled out based on whether it intersects with what has been previously drawn to the stencil buffer.\n\nEach Canvas has its own stencil buffer.",
+    "snippet":"love.graphics.getStencilTest()",
+    "type":"function",
+    "url":"https://love2d.org/wiki/love.graphics.getStencilTest"
+  },
+  "love.graphics.getSupported":{
+    "description":"Gets the optional graphics features and whether they're supported on the system.\n\nSome older or low-end systems don't always support all graphics features.",
+    "snippet":"love.graphics.getSupported()",
+    "type":"function",
+    "url":"https://love2d.org/wiki/love.graphics.getSupported"
+  },
+  "love.graphics.getSystemLimits":{
+    "description":"Gets the system-dependent maximum values for love.graphics features.",
+    "snippet":"love.graphics.getSystemLimits()",
+    "type":"function",
+    "url":"https://love2d.org/wiki/love.graphics.getSystemLimits"
+  },
+  "love.graphics.getWidth":{
+    "description":"Gets the width of the window.",
+    "snippet":"love.graphics.getWidth()",
+    "type":"function",
+    "url":"https://love2d.org/wiki/love.graphics.getWidth"
+  },
+  "love.graphics.intersectScissor":{
+    "description":"Sets the scissor to the rectangle created by the intersection of the specified rectangle with the existing scissor. If no scissor is active yet, it behaves like love.graphics.setScissor.\n\nThe scissor limits the drawing area to a specified rectangle. This affects all graphics calls, including love.graphics.clear.\n\nThe dimensions of the scissor is unaffected by graphical transformations (translate, scale, ...).",
+    "snippet":"love.graphics.intersectScissor(${1:x}, ${2:y}, ${3:width}, ${4:height})",
+    "type":"function",
+    "url":"https://love2d.org/wiki/love.graphics.intersectScissor"
+  },
+  "love.graphics.isGammaCorrect":{
+    "description":"Gets whether gamma-correct rendering is supported and enabled. It can be enabled by setting t.gammacorrect = true in love.conf.\n\nNot all devices support gamma-correct rendering, in which case it will be automatically disabled and this function will return false. It is supported on desktop systems which have graphics cards that are capable of using OpenGL 3 / DIrectX 10, and iOS devices that can use OpenGL ES 3.",
+    "snippet":"love.graphics.isGammaCorrect()",
+    "type":"function",
+    "url":"https://love2d.org/wiki/love.graphics.isGammaCorrect"
+  },
+  "love.graphics.isWireframe":{
+    "description":"Gets whether wireframe mode is used when drawing.",
+    "snippet":"love.graphics.isWireframe()",
+    "type":"function",
+    "url":"https://love2d.org/wiki/love.graphics.isWireframe"
+  },
+  "love.graphics.line":{
+    "description":"Draws lines between points.",
+    "snippet":"love.graphics.line(${1:x1}, ${2:y1}, ${3:x2}, ${4:y2}, ${5:...})",
+    "type":"function",
+    "url":"https://love2d.org/wiki/love.graphics.line"
+  },
+  "love.graphics.newCanvas":{
+    "description":"Creates a new Canvas object for offscreen rendering.\n\nAntialiased Canvases have slightly higher system requirements than normal Canvases. Additionally, the supported maximum number of MSAA samples varies depending on the system. Use love.graphics.getSystemLimit to check.\n\nIf the number of MSAA samples specified is greater than the maximum supported by the system, the Canvas will still be created but only using the maximum supported amount (this includes 0.)",
+    "snippet":"love.graphics.newCanvas(${1:width}, ${2:height}, ${3:format}, ${4:msaa})",
+    "type":"function",
+    "url":"https://love2d.org/wiki/love.graphics.newCanvas"
+  },
+  "love.graphics.newFont":{
+    "description":"Creates a new Font.",
+    "snippet":"love.graphics.newFont(${1:filename}, ${2:size})",
+    "type":"function",
+    "url":"https://love2d.org/wiki/love.graphics.newFont"
+  },
+  "love.graphics.newImage":{
+    "description":"Creates a new Image from a filepath, FileData, an ImageData, or a CompressedImageData, and optionally generates or specifies mipmaps for the image.",
+    "snippet":"love.graphics.newImage(${1:filename})",
+    "type":"function",
+    "url":"https://love2d.org/wiki/love.graphics.newImage"
+  },
+  "love.graphics.newImageFont":{
+    "description":"Creates a new Font by loading a specifically formatted image. There can be up to 256 glyphs.\n\nIn versions prior to 0.9.0, LÖVE expects ISO 8859-1 encoding for the glyphs string.",
+    "snippet":"love.graphics.newImageFont(${1:filename}, ${2:glyphs}, ${3:extraspacing})",
+    "type":"function",
+    "url":"https://love2d.org/wiki/love.graphics.newImageFont"
+  },
+  "love.graphics.newMesh":{
+    "description":"Creates a new Mesh.\n\nUse Mesh:setTexture if the Mesh should be textured with an Image or Canvas when it's drawn.",
+    "snippet":"love.graphics.newMesh(${1:vertices}, ${2:mode}, ${3:usage})",
+    "type":"function",
+    "url":"https://love2d.org/wiki/love.graphics.newMesh"
+  },
+  "love.graphics.newParticleSystem":{
+    "description":"Creates a new ParticleSystem.",
+    "snippet":"love.graphics.newParticleSystem(${1:texture}, ${2:buffer})",
+    "type":"function",
+    "url":"https://love2d.org/wiki/love.graphics.newParticleSystem"
+  },
+  "love.graphics.newQuad":{
+    "description":"Creates a new Quad.\n\nThe purpose of a Quad is to describe the result of the following transformation on any drawable object. The object is first scaled to dimensions sw * sh. The Quad then describes the rectangular area of dimensions width * height whose upper left corner is at position (x, y) inside the scaled object.",
+    "snippet":"love.graphics.newQuad(${1:x}, ${2:y}, ${3:width}, ${4:height}, ${5:sw}, ${6:sh})",
+    "type":"function",
+    "url":"https://love2d.org/wiki/love.graphics.newQuad"
+  },
+  "love.graphics.newScreenshot":{
+    "description":"Creates a screenshot and returns the image data.",
+    "snippet":"love.graphics.newScreenshot(${1:copyAlpha})",
+    "type":"function",
+    "url":"https://love2d.org/wiki/love.graphics.newScreenshot"
+  },
+  "love.graphics.newShader":{
+    "description":"Creates a new Shader object for hardware-accelerated vertex and pixel effects. A Shader contains either vertex shader code, pixel shader code, or both.\n\nVertex shader code must contain at least one function, named position, which is the function that will produce transformed vertex positions of drawn objects in screen-space.\n\nPixel shader code must contain at least one function, named effect, which is the function that will produce the color which is blended onto the screen for each pixel a drawn object touches.",
+    "snippet":"love.graphics.newShader(${1:code})",
+    "type":"function",
+    "url":"https://love2d.org/wiki/love.graphics.newShader"
+  },
+  "love.graphics.newSpriteBatch":{
+    "description":"Creates a new SpriteBatch object.",
+    "snippet":"love.graphics.newSpriteBatch(${1:texture}, ${2:maxsprites}, ${3:usage})",
+    "type":"function",
+    "url":"https://love2d.org/wiki/love.graphics.newSpriteBatch"
+  },
+  "love.graphics.newText":{
+    "description":"Creates a new Font.",
+    "snippet":"love.graphics.newText(${1:font}, ${2:textstring})",
+    "type":"function",
+    "url":"https://love2d.org/wiki/love.graphics.newText"
+  },
+  "love.graphics.newVideo":{
+    "description":"Creates a new drawable Video. Currently only Ogg Theora video files are supported.",
+    "snippet":"love.graphics.newVideo(${1:filename}, ${2:loadaudio})",
+    "type":"function",
+    "url":"https://love2d.org/wiki/love.graphics.newVideo"
+  },
+  "love.graphics.origin":{
+    "description":"Resets the current coordinate transformation.\n\nThis function is always used to reverse any previous calls to love.graphics.rotate, love.graphics.scale, love.graphics.shear or love.graphics.translate. It returns the current transformation state to its defaults.",
+    "snippet":"love.graphics.origin()",
+    "type":"function",
+    "url":"https://love2d.org/wiki/love.graphics.origin"
+  },
+  "love.graphics.points":{
+    "description":"Draws one or more points.",
+    "snippet":"love.graphics.points(${1:x}, ${2:y}, ${3:...})",
+    "type":"function",
+    "url":"https://love2d.org/wiki/love.graphics.points"
+  },
+  "love.graphics.polygon":{
+    "description":"Draw a polygon.\n\nFollowing the mode argument, this function can accept multiple numeric arguments or a single table of numeric arguments. In either case the arguments are interpreted as alternating x and y coordinates of the polygon's vertices.\n\nWhen in fill mode, the polygon must be convex and simple or rendering artifacts may occur.",
+    "snippet":"love.graphics.polygon(${1:mode}, ${2:...})",
+    "type":"function",
+    "url":"https://love2d.org/wiki/love.graphics.polygon"
+  },
+  "love.graphics.pop":{
+    "description":"Pops the current coordinate transformation from the transformation stack.\n\nThis function is always used to reverse a previous push operation. It returns the current transformation state to what it was before the last preceding push. For an example, see the description of love.graphics.push.",
+    "snippet":"love.graphics.pop()",
+    "type":"function",
+    "url":"https://love2d.org/wiki/love.graphics.pop"
+  },
+  "love.graphics.present":{
+    "description":"Displays the results of drawing operations on the screen.\n\nThis function is used when writing your own love.run function. It presents all the results of your drawing operations on the screen. See the example in love.run for a typical use of this function.",
+    "snippet":"love.graphics.present()",
+    "type":"function",
+    "url":"https://love2d.org/wiki/love.graphics.present"
+  },
+  "love.graphics.print":{
+    "description":"Draws text on screen. If no Font is set, one will be created and set (once) if needed.\n\nWhen using translation and scaling functions while drawing text, this function assumes the scale occurs first. If you don't script with this in mind, the text won't be in the right position, or possibly even on screen.\n\nlove.graphics.print stops at the first '\u0000' (null) character. This can bite you if you are appending keystrokes to form your string, as some of those are multi-byte unicode characters which will likely contain null bytes.",
+    "snippet":"love.graphics.print(${1:text}, ${2:x}, ${3:y}, ${4:r}, ${5:sx}, ${6:sy}, ${7:ox}, ${8:oy}, ${9:kx}, ${10:ky})",
+    "type":"function",
+    "url":"https://love2d.org/wiki/love.graphics.print"
+  },
+  "love.graphics.printf":{
+    "description":"Draws formatted text, with word wrap and alignment.\n\nSee additional notes in love.graphics.print.\n\nIn version 0.9.2 and earlier, wrapping was implemented by breaking up words by spaces and putting them back together to make sure things fit nicely within the limit provided. However, due to the way this is done, extra spaces between words would end up missing when printed on the screen, and some lines could overflow past the provided wrap limit. In version 0.10.0 and newer this is no longer the case.",
+    "snippet":"love.graphics.printf(${1:text}, ${2:x}, ${3:y}, ${4:limit}, ${5:align}, ${6:r}, ${7:sx}, ${8:sy}, ${9:ox}, ${10:oy}, ${11:kx}, ${12:ky})",
+    "type":"function",
+    "url":"https://love2d.org/wiki/love.graphics.printf"
+  },
+  "love.graphics.push":{
+    "description":"Copies and pushes the current coordinate transformation to the transformation stack.\n\nThis function is always used to prepare for a corresponding pop operation later. It stores the current coordinate transformation state into the transformation stack and keeps it active. Later changes to the transformation can be undone by using the pop operation, which returns the coordinate transform to the state it was in before calling push.",
+    "snippet":"love.graphics.push()",
+    "type":"function",
+    "url":"https://love2d.org/wiki/love.graphics.push"
+  },
+  "love.graphics.rectangle":{
+    "description":"Draws a rectangle.",
+    "snippet":"love.graphics.rectangle(${1:mode}, ${2:x}, ${3:y}, ${4:width}, ${5:height})",
+    "type":"function",
+    "url":"https://love2d.org/wiki/love.graphics.rectangle"
+  },
+  "love.graphics.reset":{
+    "description":"Resets the current graphics settings.\n\nCalling reset makes the current drawing color white, the current background color black, resets any active Canvas or Shader, and removes any scissor settings. It sets the BlendMode to alpha. It also sets both the point and line drawing modes to smooth and their sizes to 1.0.",
+    "snippet":"love.graphics.reset()",
+    "type":"function",
+    "url":"https://love2d.org/wiki/love.graphics.reset"
+  },
+  "love.graphics.rotate":{
+    "description":"Rotates the coordinate system in two dimensions.\n\nCalling this function affects all future drawing operations by rotating the coordinate system around the origin by the given amount of radians. This change lasts until love.draw exits.",
+    "snippet":"love.graphics.rotate(${1:angle})",
+    "type":"function",
+    "url":"https://love2d.org/wiki/love.graphics.rotate"
+  },
+  "love.graphics.scale":{
+    "description":"Scales the coordinate system in two dimensions.\n\nBy default the coordinate system in LÖVE corresponds to the display pixels in horizontal and vertical directions one-to-one, and the x-axis increases towards the right while the y-axis increases downwards. Scaling the coordinate system changes this relation.\n\nAfter scaling by sx and sy, all coordinates are treated as if they were multiplied by sx and sy. Every result of a drawing operation is also correspondingly scaled, so scaling by (2, 2) for example would mean making everything twice as large in both x- and y-directions. Scaling by a negative value flips the coordinate system in the corresponding direction, which also means everything will be drawn flipped or upside down, or both. Scaling by zero is not a useful operation.\n\nScale and translate are not commutative operations, therefore, calling them in different orders will change the outcome.\n\nScaling lasts until love.draw exits.",
+    "snippet":"love.graphics.scale(${1:sx}, ${2:sy})",
+    "type":"function",
+    "url":"https://love2d.org/wiki/love.graphics.scale"
+  },
+  "love.graphics.setBackgroundColor":{
+    "description":"Sets the background color.",
+    "snippet":"love.graphics.setBackgroundColor(${1:r}, ${2:g}, ${3:b}, ${4:a})",
+    "type":"function",
+    "url":"https://love2d.org/wiki/love.graphics.setBackgroundColor"
+  },
+  "love.graphics.setBlendMode":{
+    "description":"Sets the blending mode.",
+    "snippet":"love.graphics.setBlendMode(${1:mode})",
+    "type":"function",
+    "url":"https://love2d.org/wiki/love.graphics.setBlendMode"
+  },
+  "love.graphics.setCanvas":{
+    "description":"Sets the render target to one or more Canvases. All drawing operations until the next love.graphics.setCanvas call will be redirected to the specified canvases and not shown on the screen.\n\nAll canvas arguments must have the same widths and heights and the same texture type. Normally the same thing will be drawn on each canvas, but that can be changed if a pixel shader is used with the \"effects\" function instead of the regular effect.\n\nNot all computers support Canvases, and not all computers which support Canvases will support multiple render targets. Use love.graphics.isSupported to check.\n\nnWhen called without arguments, the render target is reset to the screen.",
+    "snippet":"love.graphics.setCanvas()",
+    "type":"function",
+    "url":"https://love2d.org/wiki/love.graphics.setCanvas"
+  },
+  "love.graphics.setColor":{
+    "description":"Sets the color used for drawing.",
+    "snippet":"love.graphics.setColor(${1:red}, ${2:green}, ${3:blue}, ${4:alpha})",
+    "type":"function",
+    "url":"https://love2d.org/wiki/love.graphics.setColor"
+  },
+  "love.graphics.setColorMask":{
+    "description":"Sets the color mask. Enables or disables specific color components when rendering and clearing the screen. For example, if red is set to false, no further changes will be made to the red component of any pixels.\n\nEnables all color components when called without arguments.",
+    "snippet":"love.graphics.setColorMask()",
+    "type":"function",
+    "url":"https://love2d.org/wiki/love.graphics.setColorMask"
+  },
+  "love.graphics.setDefaultFilter":{
+    "description":"Sets the default scaling filters used with Images, Canvases, and Fonts.\n\nThis function does not apply retroactively to loaded images.",
+    "snippet":"love.graphics.setDefaultFilter(${1:min}, ${2:mag}, ${3:anisotropy})",
+    "type":"function",
+    "url":"https://love2d.org/wiki/love.graphics.setDefaultFilter"
+  },
+  "love.graphics.setFont":{
+    "description":"Set an already-loaded Font as the current font or create and load a new one from the file and size.\n\nIt's recommended that Font objects are created with love.graphics.newFont in the loading stage and then passed to this function in the drawing stage.",
+    "snippet":"love.graphics.setFont(${1:font})",
+    "type":"function",
+    "url":"https://love2d.org/wiki/love.graphics.setFont"
+  },
+  "love.graphics.setLineJoin":{
+    "description":"Sets the line join style.",
+    "snippet":"love.graphics.setLineJoin(${1:join})",
+    "type":"function",
+    "url":"https://love2d.org/wiki/love.graphics.setLineJoin"
+  },
+  "love.graphics.setLineStyle":{
+    "description":"Sets the line style.",
+    "snippet":"love.graphics.setLineStyle(${1:style})",
+    "type":"function",
+    "url":"https://love2d.org/wiki/love.graphics.setLineStyle"
+  },
+  "love.graphics.setLineWidth":{
+    "description":"Sets the line width.",
+    "snippet":"love.graphics.setLineWidth(${1:width})",
+    "type":"function",
+    "url":"https://love2d.org/wiki/love.graphics.setLineWidth"
+  },
+  "love.graphics.setNewFont":{
+    "description":"Creates and sets a new font.",
+    "snippet":"love.graphics.setNewFont(${1:filename}, ${2:size})",
+    "type":"function",
+    "url":"https://love2d.org/wiki/love.graphics.setNewFont"
+  },
+  "love.graphics.setPointSize":{
+    "description":"Sets the point size.",
+    "snippet":"love.graphics.setPointSize(${1:size})",
+    "type":"function",
+    "url":"https://love2d.org/wiki/love.graphics.setPointSize"
+  },
+  "love.graphics.setScissor":{
+    "description":"Sets or disables scissor.\n\nThe scissor limits the drawing area to a specified rectangle. This affects all graphics calls, including love.graphics.clear.",
+    "snippet":"love.graphics.setScissor(${1:x}, ${2:y}, ${3:width}, ${4:height})",
+    "type":"function",
+    "url":"https://love2d.org/wiki/love.graphics.setScissor"
+  },
+  "love.graphics.setShader":{
+    "description":"Sets or resets a Shader as the current pixel effect or vertex shaders. All drawing operations until the next love.graphics.setShader will be drawn using the Shader object specified.\n\nDisables the shaders when called without arguments.",
+    "snippet":"love.graphics.setShader()",
+    "type":"function",
+    "url":"https://love2d.org/wiki/love.graphics.setShader"
+  },
+  "love.graphics.setStencilTest":{
+    "description":"Configures or disables stencil testing.\n\nWhen stencil testing is enabled, the geometry of everything that is drawn afterward will be clipped / stencilled out based on a comparison between the arguments of this function and the stencil value of each pixel that the geometry touches. The stencil values of pixels are affected via love.graphics.stencil.\n\nEach Canvas has its own per-pixel stencil values.",
+    "snippet":"love.graphics.setStencilTest(${1:comparemode}, ${2:comparevalue})",
+    "type":"function",
+    "url":"https://love2d.org/wiki/love.graphics.setStencilTest"
+  },
+  "love.graphics.setWireframe":{
+    "description":"Sets whether wireframe lines will be used when drawing.\n\nWireframe mode should only be used for debugging. The lines drawn with it enabled do not behave like regular love.graphics lines: their widths don't scale with the coordinate transformations or with love.graphics.setLineWidth, and they don't use the smooth LineStyle.",
+    "snippet":"love.graphics.setWireframe(${1:enable})",
+    "type":"function",
+    "url":"https://love2d.org/wiki/love.graphics.setWireframe"
+  },
+  "love.graphics.shear":{
+    "description":"Shears the coordinate system.",
+    "snippet":"love.graphics.shear(${1:kx}, ${2:ky})",
+    "type":"function",
+    "url":"https://love2d.org/wiki/love.graphics.shear"
+  },
+  "love.graphics.stencil":{
+    "description":"Draws geometry as a stencil.\n\nThe geometry drawn by the supplied function sets invisible stencil values of pixels, instead of setting pixel colors. The stencil values of pixels can act like a mask / stencil - love.graphics.setStencilTest can be used afterward to determine how further rendering is affected by the stencil values in each pixel.\n\nEach Canvas has its own per-pixel stencil values. Stencil values are within the range of [0, 255].",
+    "snippet":"love.graphics.stencil(${1:stencilfunction}, ${2:action}, ${3:value}, ${4:keepvalues})",
+    "type":"function",
+    "url":"https://love2d.org/wiki/love.graphics.stencil"
+  },
+  "love.graphics.translate":{
+    "description":"Translates the coordinate system in two dimensions.\n\nWhen this function is called with two numbers, dx, and dy, all the following drawing operations take effect as if their x and y coordinates were x+dx and y+dy.\n\nScale and translate are not commutative operations, therefore, calling them in different orders will change the outcome.\n\nThis change lasts until love.graphics.clear is called (which is called automatically before love.draw in the default love.run function), or a love.graphics.pop reverts to a previous coordinate system state.\n\nTranslating using whole numbers will prevent tearing/blurring of images and fonts draw after translating.",
+    "snippet":"love.graphics.translate(${1:dx}, ${2:dy})",
+    "type":"function",
+    "url":"https://love2d.org/wiki/love.graphics.translate"
+  },
+  "love.image":{
+    "description":"Provides an interface to decode encoded image data.",
+    "type":"module",
+    "url":"https://love2d.org/wiki/love.image"
+  },
+  "love.image.isCompressed":{
+    "description":"Determines whether a file can be loaded as CompressedImageData.",
+    "snippet":"love.image.isCompressed(${1:filename})",
+    "type":"function",
+    "url":"https://love2d.org/wiki/love.image.isCompressed"
+  },
+  "love.image.newCompressedData":{
+    "description":"Create a new CompressedImageData object from a compressed image file. LÖVE supports several compressed texture formats, enumerated in the CompressedImageFormat page.",
+    "snippet":"love.image.newCompressedData(${1:filename})",
+    "type":"function",
+    "url":"https://love2d.org/wiki/love.image.newCompressedData"
+  },
+  "love.image.newImageData":{
+    "description":"Create a new ImageData object.",
+    "snippet":"love.image.newImageData(${1:width}, ${2:height})",
+    "type":"function",
+    "url":"https://love2d.org/wiki/love.image.newImageData"
+  },
+  "love.joystick":{
+    "description":"Provides an interface to the user's joystick.",
+    "type":"module",
+    "url":"https://love2d.org/wiki/love.joystick"
+  },
+  "love.joystick.getJoystickCount":{
+    "description":"Gets the number of connected joysticks.",
+    "snippet":"love.joystick.getJoystickCount()",
+    "type":"function",
+    "url":"https://love2d.org/wiki/love.joystick.getJoystickCount"
+  },
+  "love.joystick.getJoysticks":{
+    "description":"Gets a list of connected Joysticks.",
+    "snippet":"love.joystick.getJoysticks()",
+    "type":"function",
+    "url":"https://love2d.org/wiki/love.joystick.getJoysticks"
+  },
+  "love.joystick.loadGamepadMappings":{
+    "description":"Loads a gamepad mappings string or file created with love.joystick.saveGamepadMappings.",
+    "snippet":"love.joystick.loadGamepadMappings(${1:filename})",
+    "type":"function",
+    "url":"https://love2d.org/wiki/love.joystick.loadGamepadMappings"
+  },
+  "love.joystick.saveGamepadMappings":{
+    "description":"Saves the virtual gamepad mappings of all Joysticks that are recognized as gamepads and have either been recently used or their gamepad bindings have been modified.",
+    "snippet":"love.joystick.saveGamepadMappings(${1:filename})",
+    "type":"function",
+    "url":"https://love2d.org/wiki/love.joystick.saveGamepadMappings"
+  },
+  "love.joystick.setGamepadMapping":{
+    "description":"Binds a virtual gamepad input to a button, axis or hat for all Joysticks of a certain type. For example, if this function is used with a GUID returned by a Dualshock 3 controller in OS X, the binding will affect Joystick:getGamepadAxis and Joystick:isGamepadDown for all Dualshock 3 controllers used with the game when run in OS X.\n\nLÖVE includes built-in gamepad bindings for many common controllers. This function lets you change the bindings or add new ones for types of Joysticks which aren't recognized as gamepads by default.\n\nThe virtual gamepad buttons and axes are designed around the Xbox 360 controller layout.",
+    "snippet":"love.joystick.setGamepadMapping(${1:guid}, ${2:button}, ${3:inputtype}, ${4:inputindex}, ${5:hatdirection})",
+    "type":"function",
+    "url":"https://love2d.org/wiki/love.joystick.setGamepadMapping"
+  },
+  "love.joystickadded":{
+    "description":"Called when a Joystick is connected.\n\nThis callback is also triggered after love.load for every Joystick which was already connected when the game started up.",
+    "snippet":"function love.joystickadded(${1:joystick})\n\t${0:-- body...}\nend",
+    "type":"callback",
+    "url":"https://love2d.org/wiki/love.joystickadded"
+  },
+  "love.joystickaxis":{
+    "description":"Called when a joystick axis moves.",
+    "snippet":"function love.joystickaxis(${1:joystick}, ${2:axis}, ${3:value})\n\t${0:-- body...}\nend",
+    "type":"callback",
+    "url":"https://love2d.org/wiki/love.joystickaxis"
+  },
+  "love.joystickhat":{
+    "description":"Called when a joystick hat direction changes.",
+    "snippet":"function love.joystickhat(${1:joystick}, ${2:hat}, ${3:direction})\n\t${0:-- body...}\nend",
+    "type":"callback",
+    "url":"https://love2d.org/wiki/love.joystickhat"
+  },
+  "love.joystickpressed":{
+    "description":"Called when a joystick button is pressed.",
+    "snippet":"function love.joystickpressed(${1:joystick}, ${2:button})\n\t${0:-- body...}\nend",
+    "type":"callback",
+    "url":"https://love2d.org/wiki/love.joystickpressed"
+  },
+  "love.joystickreleased":{
+    "description":"Called when a joystick button is released.",
+    "snippet":"function love.joystickreleased(${1:joystick}, ${2:button})\n\t${0:-- body...}\nend",
+    "type":"callback",
+    "url":"https://love2d.org/wiki/love.joystickreleased"
+  },
+  "love.joystickremoved":{
+    "description":"Called when a Joystick is disconnected.",
+    "snippet":"function love.joystickremoved(${1:joystick})\n\t${0:-- body...}\nend",
+    "type":"callback",
+    "url":"https://love2d.org/wiki/love.joystickremoved"
+  },
+  "love.keyboard":{
+    "description":"Provides an interface to the user's keyboard.",
+    "type":"module",
+    "url":"https://love2d.org/wiki/love.keyboard"
+  },
+  "love.keyboard.getKeyFromScancode":{
+    "description":"Gets the key corresponding to the given hardware scancode.\n\nUnlike key constants, Scancodes are keyboard layout-independent. For example the scancode \"w\" will be generated if the key in the same place as the \"w\" key on an American keyboard is pressed, no matter what the key is labelled or what the user's operating system settings are.\n\nScancodes are useful for creating default controls that have the same physical locations on on all systems.",
+    "snippet":"love.keyboard.getKeyFromScancode(${1:scancode})",
+    "type":"function",
+    "url":"https://love2d.org/wiki/love.keyboard.getKeyFromScancode"
+  },
+  "love.keyboard.getScancodeFromKey":{
+    "description":"Gets the hardware scancode corresponding to the given key.\n\nUnlike key constants, Scancodes are keyboard layout-independent. For example the scancode \"w\" will be generated if the key in the same place as the \"w\" key on an American keyboard is pressed, no matter what the key is labelled or what the user's operating system settings are.\n\nScancodes are useful for creating default controls that have the same physical locations on on all systems.",
+    "snippet":"love.keyboard.getScancodeFromKey(${1:key})",
+    "type":"function",
+    "url":"https://love2d.org/wiki/love.keyboard.getScancodeFromKey"
+  },
+  "love.keyboard.hasKeyRepeat":{
+    "description":"Gets whether key repeat is enabled.",
+    "snippet":"love.keyboard.hasKeyRepeat()",
+    "type":"function",
+    "url":"https://love2d.org/wiki/love.keyboard.hasKeyRepeat"
+  },
+  "love.keyboard.hasTextInput":{
+    "description":"Gets whether text input events are enabled.",
+    "snippet":"love.keyboard.hasTextInput()",
+    "type":"function",
+    "url":"https://love2d.org/wiki/love.keyboard.hasTextInput"
+  },
+  "love.keyboard.isDown":{
+    "description":"Checks whether a certain key is down. Not to be confused with love.keypressed or love.keyreleased.",
+    "snippet":"love.keyboard.isDown(${1:key})",
+    "type":"function",
+    "url":"https://love2d.org/wiki/love.keyboard.isDown"
+  },
+  "love.keyboard.isScancodeDown":{
+    "description":"Checks whether the specified Scancodes are pressed. Not to be confused with love.keypressed or love.keyreleased.\n\nUnlike regular KeyConstants, Scancodes are keyboard layout-independent. The scancode \"w\" is used if the key in the same place as the \"w\" key on an American keyboard is pressed, no matter what the key is labelled or what the user's operating system settings are.",
+    "snippet":"love.keyboard.isScancodeDown(${1:scancode}, ${2:...})",
+    "type":"function",
+    "url":"https://love2d.org/wiki/love.keyboard.isScancodeDown"
+  },
+  "love.keyboard.setKeyRepeat":{
+    "description":"Enables or disables key repeat. It is disabled by default.\n\nThe interval between repeats depends on the user's system settings.",
+    "snippet":"love.keyboard.setKeyRepeat(${1:enable})",
+    "type":"function",
+    "url":"https://love2d.org/wiki/love.keyboard.setKeyRepeat"
+  },
+  "love.keyboard.setTextInput":{
+    "description":"Enables or disables text input events. It is enabled by default on Windows, Mac, and Linux, and disabled by default on iOS and Android.",
+    "snippet":"love.keyboard.setTextInput(${1:enable})",
+    "type":"function",
+    "url":"https://love2d.org/wiki/love.keyboard.setTextInput"
+  },
+  "love.keypressed":{
+    "description":"Callback function triggered when a key is pressed.",
+    "snippet":"function love.keypressed(${1:key}, ${2:scancode}, ${3:isrepeat})\n\t${0:-- body...}\nend",
+    "type":"callback",
+    "url":"https://love2d.org/wiki/love.keypressed"
+  },
+  "love.keyreleased":{
+    "description":"Callback function triggered when a keyboard key is released.",
+    "snippet":"function love.keyreleased(${1:key})\n\t${0:-- body...}\nend",
+    "type":"callback",
+    "url":"https://love2d.org/wiki/love.keyreleased"
+  },
+  "love.load":{
+    "description":"This function is called exactly once at the beginning of the game.",
+    "snippet":"function love.load(${1:arg})\n\t${0:-- body...}\nend",
+    "type":"callback",
+    "url":"https://love2d.org/wiki/love.load"
+  },
+  "love.lowmemory":{
+    "description":"Callback function triggered when the system is running out of memory on mobile devices.\n\n Mobile operating systems may forcefully kill the game if it uses too much memory, so any non-critical resource should be removed if possible (by setting all variables referencing the resources to nil, and calling collectgarbage()), when this event is triggered. Sounds and images in particular tend to use the most memory.",
+    "snippet":"function love.lowmemory()\n\t${0:-- body...}\nend",
+    "type":"callback",
+    "url":"https://love2d.org/wiki/love.lowmemory"
+  },
+  "love.math":{
+    "description":"Provides system-independent mathematical functions.",
+    "type":"module",
+    "url":"https://love2d.org/wiki/love.math"
+  },
+  "love.math.compress":{
+    "description":"Compresses a string or data using a specific compression algorithm.",
+    "snippet":"love.math.compress(${1:rawstring}, ${2:format}, ${3:level})",
+    "type":"function",
+    "url":"https://love2d.org/wiki/love.math.compress"
+  },
+  "love.math.decompress":{
+    "description":"Decompresses a CompressedData or previously compressed string or Data object.",
+    "snippet":"love.math.decompress(${1:compressedData})",
+    "type":"function",
+    "url":"https://love2d.org/wiki/love.math.decompress"
+  },
+  "love.math.gammaToLinear":{
+    "description":"Converts a color from gamma-space (sRGB) to linear-space (RGB). This is useful when doing gamma-correct rendering and you need to do math in linear RGB in the few cases where LÖVE doesn't handle conversions automatically.",
+    "snippet":"love.math.gammaToLinear(${1:r}, ${2:g}, ${3:b})",
+    "type":"function",
+    "url":"https://love2d.org/wiki/love.math.gammaToLinear"
+  },
+  "love.math.getRandomSeed":{
+    "description":"Gets the seed of the random number generator.\n\nThe state is split into two numbers due to Lua's use of doubles for all number values - doubles can't accurately represent integer values above 2^53.",
+    "snippet":"love.math.getRandomSeed()",
+    "type":"function",
+    "url":"https://love2d.org/wiki/love.math.getRandomSeed"
+  },
+  "love.math.getRandomState":{
+    "description":"Gets the current state of the random number generator. This returns an opaque implementation-dependent string which is only useful for later use with RandomGenerator:setState.\n\nThis is different from RandomGenerator:getSeed in that getState gets the RandomGenerator's current state, whereas getSeed gets the previously set seed number.\n\nThe value of the state string does not depend on the current operating system.",
+    "snippet":"love.math.getRandomState()",
+    "type":"function",
+    "url":"https://love2d.org/wiki/love.math.getRandomState"
+  },
+  "love.math.isConvex":{
+    "description":"Checks whether a polygon is convex.\n\nPolygonShapes in love.physics, some forms of Mesh, and polygons drawn with love.graphics.polygon must be simple convex polygons.",
+    "snippet":"love.math.isConvex(${1:vertices})",
+    "type":"function",
+    "url":"https://love2d.org/wiki/love.math.isConvex"
+  },
+  "love.math.linearToGamma":{
+    "description":"Converts a color from linear-space (RGB) to gamma-space (sRGB). This is useful when storing linear RGB color values in an image, because the linear RGB color space has less precision than sRGB for dark colors, which can result in noticeable color banding when drawing.\n\nIn general, colors chosen based on what they look like on-screen are already in gamma-space and should not be double-converted. Colors calculated using math are often in the linear RGB space.",
+    "snippet":"love.math.linearToGamma(${1:lr}, ${2:lg}, ${3:lb})",
+    "type":"function",
+    "url":"https://love2d.org/wiki/love.math.linearToGamma"
+  },
+  "love.math.newBezierCurve":{
+    "description":"Creates a new BezierCurve object.\n\nThe number of vertices in the control polygon determines the degree of the curve, e.g. three vertices define a quadratic (degree 2) Bézier curve, four vertices define a cubic (degree 3) Bézier curve, etc.",
+    "snippet":"love.math.newBezierCurve(${1:vertices})",
+    "type":"function",
+    "url":"https://love2d.org/wiki/love.math.newBezierCurve"
+  },
+  "love.math.newRandomGenerator":{
+    "description":"Creates a new RandomGenerator object which is completely independent of other RandomGenerator objects and random functions.",
+    "snippet":"love.math.newRandomGenerator()",
+    "type":"function",
+    "url":"https://love2d.org/wiki/love.math.newRandomGenerator"
+  },
+  "love.math.noise":{
+    "description":"Generates a Simplex or Perlin noise value in 1-4 dimensions. The return value will always be the same, given the same arguments.\n\nSimplex noise is closely related to Perlin noise. It is widely used for procedural content generation.\n\nThere are many webpages which discuss Perlin and Simplex noise in detail.",
+    "snippet":"love.math.noise(${1:x})",
+    "type":"function",
+    "url":"https://love2d.org/wiki/love.math.noise"
+  },
+  "love.math.random":{
+    "description":"Generates a pseudo-random number in a platform independent manner.",
+    "snippet":"love.math.random()",
+    "type":"function",
+    "url":"https://love2d.org/wiki/love.math.random"
+  },
+  "love.math.randomNormal":{
+    "description":"Get a normally distributed pseudo random number.",
+    "snippet":"love.math.randomNormal(${1:stddev}, ${2:mean})",
+    "type":"function",
+    "url":"https://love2d.org/wiki/love.math.randomNormal"
+  },
+  "love.math.setRandomSeed":{
+    "description":"Sets the seed of the random number generator using the specified integer number.",
+    "snippet":"love.math.setRandomSeed(${1:seed})",
+    "type":"function",
+    "url":"https://love2d.org/wiki/love.math.setRandomSeed"
+  },
+  "love.math.setRandomState":{
+    "description":"Gets the current state of the random number generator. This returns an opaque implementation-dependent string which is only useful for later use with RandomGenerator:setState.\n\nThis is different from RandomGenerator:getSeed in that getState gets the RandomGenerator's current state, whereas getSeed gets the previously set seed number.\n\nThe value of the state string does not depend on the current operating system.",
+    "snippet":"love.math.setRandomState(${1:state})",
+    "type":"function",
+    "url":"https://love2d.org/wiki/love.math.setRandomState"
+  },
+  "love.math.triangulate":{
+    "description":"Triangulate a simple polygon.",
+    "snippet":"love.math.triangulate(${1:polygon})",
+    "type":"function",
+    "url":"https://love2d.org/wiki/love.math.triangulate"
+  },
+  "love.mouse":{
+    "description":"Provides an interface to the user's mouse.",
+    "type":"module",
+    "url":"https://love2d.org/wiki/love.mouse"
+  },
+  "love.mouse.getCursor":{
+    "description":"Gets the current Cursor.",
+    "snippet":"love.mouse.getCursor()",
+    "type":"function",
+    "url":"https://love2d.org/wiki/love.mouse.getCursor"
+  },
+  "love.mouse.getPosition":{
+    "description":"Returns the current position of the mouse.",
+    "snippet":"love.mouse.getPosition()",
+    "type":"function",
+    "url":"https://love2d.org/wiki/love.mouse.getPosition"
+  },
+  "love.mouse.getRelativeMode":{
+    "description":"Gets whether relative mode is enabled for the mouse.\n\nIf relative mode is enabled, the cursor is hidden and doesn't move when the mouse does, but relative mouse motion events are still generated via love.mousemoved. This lets the mouse move in any direction indefinitely without the cursor getting stuck at the edges of the screen.\n\nThe reported position of the mouse is not updated while relative mode is enabled, even when relative mouse motion events are generated.",
+    "snippet":"love.mouse.getRelativeMode()",
+    "type":"function",
+    "url":"https://love2d.org/wiki/love.mouse.getRelativeMode"
+  },
+  "love.mouse.getSystemCursor":{
+    "description":"Gets a Cursor object representing a system-native hardware cursor.\n\n Hardware cursors are framerate-independent and work the same way as normal operating system cursors. Unlike drawing an image at the mouse's current coordinates, hardware cursors never have visible lag between when the mouse is moved and when the cursor position updates, even at low framerates.",
+    "snippet":"love.mouse.getSystemCursor(${1:ctype})",
+    "type":"function",
+    "url":"https://love2d.org/wiki/love.mouse.getSystemCursor"
+  },
+  "love.mouse.getX":{
+    "description":"Returns the current x position of the mouse.",
+    "snippet":"love.mouse.getX()",
+    "type":"function",
+    "url":"https://love2d.org/wiki/love.mouse.getX"
+  },
+  "love.mouse.getY":{
+    "description":"Returns the current y position of the mouse.",
+    "snippet":"love.mouse.getY()",
+    "type":"function",
+    "url":"https://love2d.org/wiki/love.mouse.getY"
+  },
+  "love.mouse.hasCursor":{
+    "description":"Gets whether cursor functionality is supported.\n\nIf it isn't supported, calling love.mouse.newCursor and love.mouse.getSystemCursor will cause an error. Mobile devices do not support cursors.",
+    "snippet":"love.mouse.hasCursor()",
+    "type":"function",
+    "url":"https://love2d.org/wiki/love.mouse.hasCursor"
+  },
+  "love.mouse.isDown":{
+    "description":"Checks whether a certain mouse button is down. This function does not detect mousewheel scrolling; you must use the love.wheelmoved (or love.mousepressed in version 0.9.2 and older) callback for that.",
+    "snippet":"love.mouse.isDown(${1:button}, ${2:...})",
+    "type":"function",
+    "url":"https://love2d.org/wiki/love.mouse.isDown"
+  },
+  "love.mouse.isGrabbed":{
+    "description":"Checks if the mouse is grabbed.",
+    "snippet":"love.mouse.isGrabbed()",
+    "type":"function",
+    "url":"https://love2d.org/wiki/love.mouse.isGrabbed"
+  },
+  "love.mouse.isVisible":{
+    "description":"Checks if the cursor is visible.",
+    "snippet":"love.mouse.isVisible()",
+    "type":"function",
+    "url":"https://love2d.org/wiki/love.mouse.isVisible"
+  },
+  "love.mouse.newCursor":{
+    "description":"Creates a new hardware Cursor object from an image file or ImageData.\n\nHardware cursors are framerate-independent and work the same way as normal operating system cursors. Unlike drawing an image at the mouse's current coordinates, hardware cursors never have visible lag between when the mouse is moved and when the cursor position updates, even at low frameratesn\n\nThe hot spot is the point the operating system uses to determine what was clicked and at what position the mouse cursor is. For example, the normal arrow pointer normally has its hot spot at the top left of the image, but a crosshair cursor might have it in the middle.",
+    "snippet":"love.mouse.newCursor(${1:imageData}, ${2:hotx}, ${3:hoty})",
+    "type":"function",
+    "url":"https://love2d.org/wiki/love.mouse.newCursor"
+  },
+  "love.mouse.setCursor":{
+    "description":"Sets the current mouse cursor.\n\nResets the current mouse cursor to the default when called without arguments.",
+    "snippet":"love.mouse.setCursor()",
+    "type":"function",
+    "url":"https://love2d.org/wiki/love.mouse.setCursor"
+  },
+  "love.mouse.setGrabbed":{
+    "description":"Grabs the mouse and confines it to the window.",
+    "snippet":"love.mouse.setGrabbed(${1:grab})",
+    "type":"function",
+    "url":"https://love2d.org/wiki/love.mouse.setGrabbed"
+  },
+  "love.mouse.setPosition":{
+    "description":"Sets the position of the mouse.",
+    "snippet":"love.mouse.setPosition(${1:x}, ${2:y})",
+    "type":"function",
+    "url":"https://love2d.org/wiki/love.mouse.setPosition"
+  },
+  "love.mouse.setRelativeMode":{
+    "description":"Sets whether relative mode is enabled for the mouse.\n\nWhen relative mode is enabled, the cursor is hidden and doesn't move when the mouse does, but relative mouse motion events are still generated via love.mousemoved. This lets the mouse move in any direction indefinitely without the cursor getting stuck at the edges of the screen.\n\nThe reported position of the mouse is not updated while relative mode is enabled, even when relative mouse motion events are generated.",
+    "snippet":"love.mouse.setRelativeMode(${1:enable})",
+    "type":"function",
+    "url":"https://love2d.org/wiki/love.mouse.setRelativeMode"
+  },
+  "love.mouse.setVisible":{
+    "description":"Sets the visibility of the cursor.",
+    "snippet":"love.mouse.setVisible(${1:visible})",
+    "type":"function",
+    "url":"https://love2d.org/wiki/love.mouse.setVisible"
+  },
+  "love.mouse.setX":{
+    "description":"Sets the current X position of the mouse.",
+    "snippet":"love.mouse.setX(${1:x})",
+    "type":"function",
+    "url":"https://love2d.org/wiki/love.mouse.setX"
+  },
+  "love.mouse.setY":{
+    "description":"Sets the current Y position of the mouse.",
+    "snippet":"love.mouse.setY(${1:y})",
+    "type":"function",
+    "url":"https://love2d.org/wiki/love.mouse.setY"
+  },
+  "love.mousefocus":{
+    "description":"Callback function triggered when window receives or loses mouse focus.",
+    "snippet":"function love.mousefocus(${1:focus})\n\t${0:-- body...}\nend",
+    "type":"callback",
+    "url":"https://love2d.org/wiki/love.mousefocus"
+  },
+  "love.mousemoved":{
+    "description":"Callback function triggered when the mouse is moved.",
+    "snippet":"function love.mousemoved(${1:x}, ${2:y}, ${3:dx}, ${4:dy})\n\t${0:-- body...}\nend",
+    "type":"callback",
+    "url":"https://love2d.org/wiki/love.mousemoved"
+  },
+  "love.mousepressed":{
+    "description":"Callback function triggered when a mouse button is pressed.",
+    "snippet":"function love.mousepressed(${1:x}, ${2:y}, ${3:button}, ${4:isTouch})\n\t${0:-- body...}\nend",
+    "type":"callback",
+    "url":"https://love2d.org/wiki/love.mousepressed"
+  },
+  "love.mousereleased":{
+    "description":"Callback function triggered when a mouse button is released.",
+    "snippet":"function love.mousereleased(${1:x}, ${2:y}, ${3:button}, ${4:isTouch})\n\t${0:-- body...}\nend",
+    "type":"callback",
+    "url":"https://love2d.org/wiki/love.mousereleased"
+  },
+  "love.physics":{
+    "description":"Can simulate 2D rigid body physics in a realistic manner. This module is based on Box2D, and this API corresponds to the Box2D API as closely as possible.",
+    "type":"module",
+    "url":"https://love2d.org/wiki/love.physics"
+  },
+  "love.physics.getDistance":{
+    "description":"Returns the two closest points between two fixtures and their distance.",
+    "snippet":"love.physics.getDistance(${1:fixture1}, ${2:fixture2})",
+    "type":"function",
+    "url":"https://love2d.org/wiki/love.physics.getDistance"
+  },
+  "love.physics.getMeter":{
+    "description":"Get the scale of the world.\n\nThe world scale is the number of pixels per meter. Try to keep your shape sizes less than 10 times this scale.\n\nThis is important because the physics in Box2D is tuned to work well for objects of size 0.1m up to 10m. All physics coordinates are divided by this number for the physics calculations.",
+    "snippet":"love.physics.getMeter()",
+    "type":"function",
+    "url":"https://love2d.org/wiki/love.physics.getMeter"
+  },
+  "love.physics.newBody":{
+    "description":"Creates a new body.\n\nThere are three types of bodies. Static bodies do not move, have a infinite mass, and can be used for level boundaries. Dynamic bodies are the main actors in the simulation, they collide with everything. Kinematic bodies do not react to forces and only collide with dynamic bodies.\n\nThe mass of the body gets calculated when a Fixture is attached or removed, but can be changed at any time with Body:setMass or Body:resetMassData.",
+    "snippet":"love.physics.newBody(${1:world}, ${2:x}, ${3:y}, ${4:type})",
+    "type":"function",
+    "url":"https://love2d.org/wiki/love.physics.newBody"
+  },
+  "love.physics.newChainShape":{
+    "description":"Creates a new ChainShape.",
+    "snippet":"love.physics.newChainShape(${1:loop}, ${2:x1}, ${3:y1}, ${4:x2}, ${5:y2}, ${6:...})",
+    "type":"function",
+    "url":"https://love2d.org/wiki/love.physics.newChainShape"
+  },
+  "love.physics.newCircleShape":{
+    "description":"Creates a new CircleShape.",
+    "snippet":"love.physics.newCircleShape(${1:radius})",
+    "type":"function",
+    "url":"https://love2d.org/wiki/love.physics.newCircleShape"
+  },
+  "love.physics.newDistanceJoint":{
+    "description":"Create a distance joint between two bodies.\n\nThis joint constrains the distance between two points on two bodies to be constant. These two points are specified in world coordinates and the two bodies are assumed to be in place when this joint is created. The first anchor point is connected to the first body and the second to the second body, and the points define the length of the distance joint.",
+    "snippet":"love.physics.newDistanceJoint(${1:body1}, ${2:body2}, ${3:x1}, ${4:y1}, ${5:x2}, ${6:y2}, ${7:collideConnected})",
+    "type":"function",
+    "url":"https://love2d.org/wiki/love.physics.newDistanceJoint"
+  },
+  "love.physics.newEdgeShape":{
+    "description":"Creates a edge shape.",
+    "snippet":"love.physics.newEdgeShape(${1:x1}, ${2:y1}, ${3:x2}, ${4:y2})",
+    "type":"function",
+    "url":"https://love2d.org/wiki/love.physics.newEdgeShape"
+  },
+  "love.physics.newFixture":{
+    "description":"Creates and attaches a Fixture to a body.",
+    "snippet":"love.physics.newFixture(${1:body}, ${2:shape}, ${3:density})",
+    "type":"function",
+    "url":"https://love2d.org/wiki/love.physics.newFixture"
+  },
+  "love.physics.newFrictionJoint":{
+    "description":"Create a friction joint between two bodies. A FrictionJoint applies friction to a body.",
+    "snippet":"love.physics.newFrictionJoint(${1:body1}, ${2:body2}, ${3:x}, ${4:y}, ${5:collideConnected})",
+    "type":"function",
+    "url":"https://love2d.org/wiki/love.physics.newFrictionJoint"
+  },
+  "love.physics.newGearJoint":{
+    "description":"Create a gear joint connecting two joints.\n\nThe gear joint connects two joints that must be either prismatic or revolute joints. Using this joint requires that the joints it uses connect their respective bodies to the ground and have the ground as the first body. When destroying the bodies and joints you must make sure you destroy the gear joint before the other joints.\n\nThe gear joint has a ratio the determines how the angular or distance values of the connected joints relate to each other. The formula coordinate1 + ratio * coordinate2 always has a constant value that is set when the gear joint is created.",
+    "snippet":"love.physics.newGearJoint(${1:joint1}, ${2:joint2}, ${3:ratio}, ${4:collideConnected})",
+    "type":"function",
+    "url":"https://love2d.org/wiki/love.physics.newGearJoint"
+  },
+  "love.physics.newMotorJoint":{
+    "description":"Creates a joint between two bodies which controls the relative motion between them.\n\nPosition and rotation offsets can be specified once the MotorJoint has been created, as well as the maximum motor force and torque that will be be applied to reach the target offsets.",
+    "snippet":"love.physics.newMotorJoint(${1:body1}, ${2:body2}, ${3:correctionFactor})",
+    "type":"function",
+    "url":"https://love2d.org/wiki/love.physics.newMotorJoint"
+  },
+  "love.physics.newMouseJoint":{
+    "description":"Create a joint between a body and the mouse.\n\nThis joint actually connects the body to a fixed point in the world. To make it follow the mouse, the fixed point must be updated every timestep (example below).\n\nThe advantage of using a MouseJoint instead of just changing a body position directly is that collisions and reactions to other joints are handled by the physics engine.",
+    "snippet":"love.physics.newMouseJoint(${1:body}, ${2:x}, ${3:y})",
+    "type":"function",
+    "url":"https://love2d.org/wiki/love.physics.newMouseJoint"
+  },
+  "love.physics.newPolygonShape":{
+    "description":"Creates a new PolygonShape.\n\nThis shape can have 8 vertices at most, and must form a convex shape.",
+    "snippet":"love.physics.newPolygonShape(${1:x1}, ${2:y1}, ${3:x2}, ${4:y2}, ${5:...})",
+    "type":"function",
+    "url":"https://love2d.org/wiki/love.physics.newPolygonShape"
+  },
+  "love.physics.newPrismaticJoint":{
+    "description":"Create a prismatic joints between two bodies.\n\nA prismatic joint constrains two bodies to move relatively to each other on a specified axis. It does not allow for relative rotation. Its definition and operation are similar to a revolute joint, but with translation and force substituted for angle and torque.",
+    "snippet":"love.physics.newPrismaticJoint(${1:body1}, ${2:body2}, ${3:x}, ${4:y}, ${5:ax}, ${6:ay}, ${7:collideConnected})",
+    "type":"function",
+    "url":"https://love2d.org/wiki/love.physics.newPrismaticJoint"
+  },
+  "love.physics.newPulleyJoint":{
+    "description":"Create a pulley joint to join two bodies to each other and the ground.\n\nThe pulley joint simulates a pulley with an optional block and tackle. If the ratio parameter has a value different from one, then the simulated rope extends faster on one side than the other. In a pulley joint the total length of the simulated rope is the constant length1 + ratio * length2, which is set when the pulley joint is created.\n\nPulley joints can behave unpredictably if one side is fully extended. It is recommended that the method setMaxLengths  be used to constrain the maximum lengths each side can attain.",
+    "snippet":"love.physics.newPulleyJoint(${1:body1}, ${2:body2}, ${3:gx1}, ${4:gy1}, ${5:gx2}, ${6:gy2}, ${7:x1}, ${8:y1}, ${9:x2}, ${10:y2}, ${11:ratio}, ${12:collideConnected})",
+    "type":"function",
+    "url":"https://love2d.org/wiki/love.physics.newPulleyJoint"
+  },
+  "love.physics.newRectangleShape":{
+    "description":"Shorthand for creating rectangluar PolygonShapes.\n\nBy default, the local origin is located at the center of the rectangle as opposed to the top left for graphics.",
+    "snippet":"love.physics.newRectangleShape(${1:width}, ${2:height})",
+    "type":"function",
+    "url":"https://love2d.org/wiki/love.physics.newRectangleShape"
+  },
+  "love.physics.newRevoluteJoint":{
+    "description":"Creates a pivot joint between two bodies.\n\nThis joint connects two bodies to a point around which they can pivot.",
+    "snippet":"love.physics.newRevoluteJoint(${1:body1}, ${2:body2}, ${3:x}, ${4:y}, ${5:collideConnected})",
+    "type":"function",
+    "url":"https://love2d.org/wiki/love.physics.newRevoluteJoint"
+  },
+  "love.physics.newRopeJoint":{
+    "description":"Create a joint between two bodies. Its only function is enforcing a max distance between these bodies.",
+    "snippet":"love.physics.newRopeJoint(${1:body1}, ${2:body2}, ${3:x1}, ${4:y1}, ${5:x2}, ${6:y2}, ${7:maxLength}, ${8:collideConnected})",
+    "type":"function",
+    "url":"https://love2d.org/wiki/love.physics.newRopeJoint"
+  },
+  "love.physics.newWeldJoint":{
+    "description":"Create a friction joint between two bodies. A WeldJoint essentially glues two bodies together.",
+    "snippet":"love.physics.newWeldJoint(${1:body1}, ${2:body2}, ${3:x}, ${4:y}, ${5:collideConnected})",
+    "type":"function",
+    "url":"https://love2d.org/wiki/love.physics.newWeldJoint"
+  },
+  "love.physics.newWheelJoint":{
+    "description":"Creates a wheel joint.",
+    "snippet":"love.physics.newWheelJoint(${1:body1}, ${2:body2}, ${3:x}, ${4:y}, ${5:ax}, ${6:ay}, ${7:collideConnected})",
+    "type":"function",
+    "url":"https://love2d.org/wiki/love.physics.newWheelJoint"
+  },
+  "love.physics.newWorld":{
+    "description":"Creates a new World.",
+    "snippet":"love.physics.newWorld(${1:xg}, ${2:yg}, ${3:sleep})",
+    "type":"function",
+    "url":"https://love2d.org/wiki/love.physics.newWorld"
+  },
+  "love.physics.setMeter":{
+    "description":"Sets the pixels to meter scale factor.\n\nAll coordinates in the physics module are divided by this number and converted to meters, and it creates a convenient way to draw the objects directly to the screen without the need for graphics transformations.\n\nIt is recommended to create shapes no larger than 10 times the scale. This is important because Box2D is tuned to work well with shape sizes from 0.1 to 10 meters. The default meter scale is 30.\n\nlove.physics.setMeter does not apply retroactively to created objects. Created objects retain their meter coordinates but the scale factor will affect their pixel coordinates.",
+    "snippet":"love.physics.setMeter(${1:scale})",
+    "type":"function",
+    "url":"https://love2d.org/wiki/love.physics.setMeter"
+  },
+  "love.quit":{
+    "description":"Callback function triggered when the game is closed.",
+    "snippet":"function love.quit()\n\t${0:-- body...}\nend",
+    "type":"callback",
+    "url":"https://love2d.org/wiki/love.quit"
+  },
+  "love.resize":{
+    "description":"Called when the window is resized, for example if the user resizes the window, or if love.window.setMode is called with an unsupported width or height in fullscreen and the window chooses the closest appropriate size.\n\nCalls to love.window.setMode will only trigger this event if the width or height of the window after the call doesn't match the requested width and height. This can happen if a fullscreen mode is requested which doesn't match any supported mode, or if the fullscreen type is 'desktop' and the requested width or height don't match the desktop resolution.",
+    "snippet":"function love.resize(${1:w}, ${2:h})\n\t${0:-- body...}\nend",
+    "type":"callback",
+    "url":"https://love2d.org/wiki/love.resize"
+  },
+  "love.run":{
+    "description":"The main function, containing the main loop. A sensible default is used when left out.",
+    "snippet":"function love.run()\n\t${0:-- body...}\nend",
+    "type":"callback",
+    "url":"https://love2d.org/wiki/love.run"
+  },
+  "love.sound":{
+    "description":"This module is responsible for decoding sound files. It can't play the sounds, see love.audio for that.",
+    "type":"module",
+    "url":"https://love2d.org/wiki/love.sound"
+  },
+  "love.sound.newDecoder":{
+    "description":"Attempts to find a decoder for the encoded sound data in the specified file.",
+    "snippet":"love.sound.newDecoder(${1:file}, ${2:buffer})",
+    "type":"function",
+    "url":"https://love2d.org/wiki/love.sound.newDecoder"
+  },
+  "love.sound.newSoundData":{
+    "description":"Creates new SoundData from a file. It's also possible to create SoundData with a custom sample rate, channel and bit depth.\n\nThe sound data will be decoded to the memory in a raw format. It is recommended to create only short sounds like effects, as a 3 minute song uses 30 MB of memory this way.",
+    "snippet":"love.sound.newSoundData(${1:filename})",
+    "type":"function",
+    "url":"https://love2d.org/wiki/love.sound.newSoundData"
+  },
+  "love.system":{
+    "description":"Provides access to information about the user's system.",
+    "type":"module",
+    "url":"https://love2d.org/wiki/love.system"
+  },
+  "love.system.getClipboardText":{
+    "description":"Gets text from the clipboard.",
+    "snippet":"love.system.getClipboardText()",
+    "type":"function",
+    "url":"https://love2d.org/wiki/love.system.getClipboardText"
+  },
+  "love.system.getOS":{
+    "description":"Gets the current operating system. In general, LÖVE abstracts away the need to know the current operating system, but there are a few cases where it can be useful (especially in combination with os.execute.)",
+    "snippet":"love.system.getOS()",
+    "type":"function",
+    "url":"https://love2d.org/wiki/love.system.getOS"
+  },
+  "love.system.getPowerInfo":{
+    "description":"Gets information about the system's power supply.",
+    "snippet":"love.system.getPowerInfo()",
+    "type":"function",
+    "url":"https://love2d.org/wiki/love.system.getPowerInfo"
+  },
+  "love.system.getProcessorCount":{
+    "description":"Gets the number of CPU cores in the system.\n\nThe number includes the threads reported if technologies such as Intel's Hyper-threading are enabled. For example, on a 4-core CPU with Hyper-threading, this function will return 8.",
+    "snippet":"love.system.getProcessorCount()",
+    "type":"function",
+    "url":"https://love2d.org/wiki/love.system.getProcessorCount"
+  },
+  "love.system.openURL":{
+    "description":"Opens a URL with the user's web or file browser.",
+    "snippet":"love.system.openURL(${1:url})",
+    "type":"function",
+    "url":"https://love2d.org/wiki/love.system.openURL"
+  },
+  "love.system.setClipboardText":{
+    "description":"Puts text in the clipboard.",
+    "snippet":"love.system.setClipboardText(${1:text})",
+    "type":"function",
+    "url":"https://love2d.org/wiki/love.system.setClipboardText"
+  },
+  "love.system.vibrate":{
+    "description":"Causes the device to vibrate, if possible. Currently this will only work on Android and iOS devices that have a built-in vibration motor.",
+    "snippet":"love.system.vibrate(${1:seconds})",
+    "type":"function",
+    "url":"https://love2d.org/wiki/love.system.vibrate"
+  },
+  "love.textedited":{
+    "description":"Called when the candidate text for an IME (Input Method Editor) has changed.\n\nThe candidate text is not the final text that the user will eventually choose. Use love.textinput for that.",
+    "snippet":"function love.textedited(${1:text}, ${2:start}, ${3:length})\n\t${0:-- body...}\nend",
+    "type":"callback",
+    "url":"https://love2d.org/wiki/love.textedited"
+  },
+  "love.textinput":{
+    "description":"Called when text has been entered by the user. For example if shift-2 is pressed on an American keyboard layout, the text \"@\" will be generated.",
+    "snippet":"function love.textinput(${1:text})\n\t${0:-- body...}\nend",
+    "type":"callback",
+    "url":"https://love2d.org/wiki/love.textinput"
+  },
+  "love.thread":{
+    "description":"Allows you to work with threads.\n\nThreads are separate Lua environments, running in parallel to the main code. As their code runs separately, they can be used to compute complex operations without adversely affecting the frame rate of the main thread. However, as they are separate environments, they cannot access the variables and functions of the main thread, and communication between threads is limited.\n\nAll LOVE objects (userdata) are shared among threads so you'll only have to send their references across threads. You may run into concurrency issues if you manipulate an object on multiple threads at the same time.\n\nWhen a Thread is started, it only loads the love.thread module. Every other module has to be loaded with require.",
+    "type":"module",
+    "url":"https://love2d.org/wiki/love.thread"
+  },
+  "love.thread.getChannel":{
+    "description":"Creates or retrieves a named thread channel.",
+    "snippet":"love.thread.getChannel(${1:name})",
+    "type":"function",
+    "url":"https://love2d.org/wiki/love.thread.getChannel"
+  },
+  "love.thread.newChannel":{
+    "description":"Create a new unnamed thread channel.\n\nOne use for them is to pass new unnamed channels to other threads via Channel:push",
+    "snippet":"love.thread.newChannel()",
+    "type":"function",
+    "url":"https://love2d.org/wiki/love.thread.newChannel"
+  },
+  "love.thread.newThread":{
+    "description":"Creates a new Thread from a File or Data object.",
+    "snippet":"love.thread.newThread(${1:filename})",
+    "type":"function",
+    "url":"https://love2d.org/wiki/love.thread.newThread"
+  },
+  "love.threaderror":{
+    "description":"Callback function triggered when a Thread encounters an error.",
+    "snippet":"function love.threaderror(${1:thread}, ${2:errorstr})\n\t${0:-- body...}\nend",
+    "type":"callback",
+    "url":"https://love2d.org/wiki/love.threaderror"
+  },
+  "love.timer":{
+    "description":"Provides an interface to the user's clock.",
+    "type":"module",
+    "url":"https://love2d.org/wiki/love.timer"
+  },
+  "love.timer.getAverageDelta":{
+    "description":"Returns the average delta time (seconds per frame) over the last second.",
+    "snippet":"love.timer.getAverageDelta()",
+    "type":"function",
+    "url":"https://love2d.org/wiki/love.timer.getAverageDelta"
+  },
+  "love.timer.getDelta":{
+    "description":"Returns the time between the last two frames.",
+    "snippet":"love.timer.getDelta()",
+    "type":"function",
+    "url":"https://love2d.org/wiki/love.timer.getDelta"
+  },
+  "love.timer.getFPS":{
+    "description":"Returns the current frames per second.",
+    "snippet":"love.timer.getFPS()",
+    "type":"function",
+    "url":"https://love2d.org/wiki/love.timer.getFPS"
+  },
+  "love.timer.getTime":{
+    "description":"Returns the value of a timer with an unspecified starting time. This function should only be used to calculate differences between points in time, as the starting time of the timer is unknown.",
+    "snippet":"love.timer.getTime()",
+    "type":"function",
+    "url":"https://love2d.org/wiki/love.timer.getTime"
+  },
+  "love.timer.sleep":{
+    "description":"Sleeps the program for the specified amount of time.",
+    "snippet":"love.timer.sleep(${1:s})",
+    "type":"function",
+    "url":"https://love2d.org/wiki/love.timer.sleep"
+  },
+  "love.timer.step":{
+    "description":"Measures the time between two frames. Calling this changes the return value of love.timer.getDelta.",
+    "snippet":"love.timer.step()",
+    "type":"function",
+    "url":"https://love2d.org/wiki/love.timer.step"
+  },
+  "love.touch":{
+    "description":"Provides an interface to touch-screen presses.",
+    "type":"module",
+    "url":"https://love2d.org/wiki/love.touch"
+  },
+  "love.touch.getPosition":{
+    "description":"Gets the current position of the specified touch-press, in pixels.",
+    "snippet":"love.touch.getPosition(${1:id})",
+    "type":"function",
+    "url":"https://love2d.org/wiki/love.touch.getPosition"
+  },
+  "love.touch.getPressure":{
+    "description":"Gets the current pressure of the specified touch-press.",
+    "snippet":"love.touch.getPressure(${1:id})",
+    "type":"function",
+    "url":"https://love2d.org/wiki/love.touch.getPressure"
+  },
+  "love.touch.getTouches":{
+    "description":"Gets a list of all active touch-presses.",
+    "snippet":"love.touch.getTouches()",
+    "type":"function",
+    "url":"https://love2d.org/wiki/love.touch.getTouches"
+  },
+  "love.touchmoved":{
+    "description":"Callback function triggered when a touch press moves inside the touch screen.",
+    "snippet":"function love.touchmoved(${1:id}, ${2:x}, ${3:y}, ${4:dx}, ${5:dy}, ${6:pressure})\n\t${0:-- body...}\nend",
+    "type":"callback",
+    "url":"https://love2d.org/wiki/love.touchmoved"
+  },
+  "love.touchpressed":{
+    "description":"Callback function triggered when the touch screen is touched.",
+    "snippet":"function love.touchpressed(${1:id}, ${2:x}, ${3:y}, ${4:dx}, ${5:dy}, ${6:pressure})\n\t${0:-- body...}\nend",
+    "type":"callback",
+    "url":"https://love2d.org/wiki/love.touchpressed"
+  },
+  "love.touchreleased":{
+    "description":"Callback function triggered when the touch screen stops being touched.",
+    "snippet":"function love.touchreleased(${1:id}, ${2:x}, ${3:y}, ${4:dx}, ${5:dy}, ${6:pressure})\n\t${0:-- body...}\nend",
+    "type":"callback",
+    "url":"https://love2d.org/wiki/love.touchreleased"
+  },
+  "love.update":{
+    "description":"Callback function triggered when a key is pressed.",
+    "snippet":"function love.update(${1:dt})\n\t${0:-- body...}\nend",
+    "type":"callback",
+    "url":"https://love2d.org/wiki/love.update"
+  },
+  "love.video":{
+    "description":"This module is responsible for decoding, controlling, and streaming video files.\n\nIt can't draw the videos, see love.graphics.newVideo and Video objects for that.",
+    "type":"module",
+    "url":"https://love2d.org/wiki/love.video"
+  },
+  "love.video.newVideoStream":{
+    "description":"Creates a new VideoStream. Currently only Ogg Theora video files are supported. VideoStreams can't draw videos, see love.graphics.newVideo for that.",
+    "snippet":"love.video.newVideoStream(${1:filename})",
+    "type":"function",
+    "url":"https://love2d.org/wiki/love.video.newVideoStream"
+  },
+  "love.visible":{
+    "description":"Callback function triggered when window is minimized/hidden or unminimized by the user.",
+    "snippet":"function love.visible(${1:visible})\n\t${0:-- body...}\nend",
+    "type":"callback",
+    "url":"https://love2d.org/wiki/love.visible"
+  },
+  "love.wheelmoved":{
+    "description":"Callback function triggered when the mouse wheel is moved.",
+    "snippet":"function love.wheelmoved(${1:x}, ${2:y})\n\t${0:-- body...}\nend",
+    "type":"callback",
+    "url":"https://love2d.org/wiki/love.wheelmoved"
+  },
+  "love.window":{
+    "description":"Provides an interface for modifying and retrieving information about the program's window.",
+    "type":"module",
+    "url":"https://love2d.org/wiki/love.window"
+  },
+  "love.window.close":{
+    "description":"Closes the window. It can be reopened with love.window.setMode.",
+    "snippet":"love.window.close()",
+    "type":"function",
+    "url":"https://love2d.org/wiki/love.window.close"
+  },
+  "love.window.fromPixels":{
+    "description":"Converts a number from pixels to density-independent units.\n\nThe pixel density inside the window might be greater (or smaller) than the \"size\" of the window. For example on a retina screen in Mac OS X with the highdpi window flag enabled, the window may take up the same physical size as an 800x600 window, but the area inside the window uses 1600x1200 pixels. love.window.fromPixels(1600) would return 800 in that case.\n\nThis function converts coordinates from pixels to the size users are expecting them to display at onscreen. love.window.toPixels does the opposite. The highdpi window flag must be enabled to use the full pixel density of a Retina screen on Mac OS X and iOS. The flag currently does nothing on Windows and Linux, and on Android it is effectively always enabled.\n\nMost LÖVE functions return values and expect arguments in terms of pixels rather than density-independent units.",
+    "snippet":"love.window.fromPixels(${1:pixelvalue})",
+    "type":"function",
+    "url":"https://love2d.org/wiki/love.window.fromPixels"
+  },
+  "love.window.getDisplayName":{
+    "description":"Gets the name of a display.",
+    "snippet":"love.window.getDisplayName(${1:displayindex})",
+    "type":"function",
+    "url":"https://love2d.org/wiki/love.window.getDisplayName"
+  },
+  "love.window.getFullscreen":{
+    "description":"Gets whether the window is fullscreen.",
+    "snippet":"love.window.getFullscreen()",
+    "type":"function",
+    "url":"https://love2d.org/wiki/love.window.getFullscreen"
+  },
+  "love.window.getFullscreenModes":{
+    "description":"Gets a list of supported fullscreen modes.",
+    "snippet":"love.window.getFullscreenModes(${1:display})",
+    "type":"function",
+    "url":"https://love2d.org/wiki/love.window.getFullscreenModes"
+  },
+  "love.window.getIcon":{
+    "description":"Gets the window icon.",
+    "snippet":"love.window.getIcon()",
+    "type":"function",
+    "url":"https://love2d.org/wiki/love.window.getIcon"
+  },
+  "love.window.getMode":{
+    "description":"Returns the current display mode.",
+    "snippet":"love.window.getMode()",
+    "type":"function",
+    "url":"https://love2d.org/wiki/love.window.getMode"
+  },
+  "love.window.getPixelScale":{
+    "description":"Gets the DPI scale factor associated with the window.\n\nThe pixel density inside the window might be greater (or smaller) than the \"size\" of the window. For example on a retina screen in Mac OS X with the highdpi window flag enabled, the window may take up the same physical size as an 800x600 window, but the area inside the window uses 1600x1200 pixels. love.window.getPixelScale() would return 2.0 in that case.\n\nThe love.window.fromPixels and love.window.toPixels functions can also be used to convert between units.\n\nThe highdpi window flag must be enabled to use the full pixel density of a Retina screen on Mac OS X and iOS. The flag currently does nothing on Windows and Linux, and on Android it is effectively always enabled.",
+    "snippet":"love.window.getPixelScale()",
+    "type":"function",
+    "url":"https://love2d.org/wiki/love.window.getPixelScale"
+  },
+  "love.window.getPosition":{
+    "description":"Gets the position of the window on the screen.\n\nThe window position is in the coordinate space of the display it is currently in.",
+    "snippet":"love.window.getPosition()",
+    "type":"function",
+    "url":"https://love2d.org/wiki/love.window.getPosition"
+  },
+  "love.window.getTitle":{
+    "description":"Gets the window title.",
+    "snippet":"love.window.getTitle()",
+    "type":"function",
+    "url":"https://love2d.org/wiki/love.window.getTitle"
+  },
+  "love.window.hasFocus":{
+    "description":"Checks if the game window has keyboard focus.",
+    "snippet":"love.window.hasFocus()",
+    "type":"function",
+    "url":"https://love2d.org/wiki/love.window.hasFocus"
+  },
+  "love.window.hasMouseFocus":{
+    "description":"Checks if the game window has mouse focus.",
+    "snippet":"love.window.hasMouseFocus()",
+    "type":"function",
+    "url":"https://love2d.org/wiki/love.window.hasMouseFocus"
+  },
+  "love.window.isCreated":{
+    "description":"Checks if the window has been created.",
+    "snippet":"love.window.isCreated()",
+    "type":"function",
+    "url":"https://love2d.org/wiki/love.window.isCreated"
+  },
+  "love.window.isDisplaySleepEnabled":{
+    "description":"Gets whether the display is allowed to sleep while the program is running.\n\nDisplay sleep is disabled by default. Some types of input (e.g. joystick button presses) might not prevent the display from sleeping, if display sleep is allowed.",
+    "snippet":"love.window.isDisplaySleepEnabled()",
+    "type":"function",
+    "url":"https://love2d.org/wiki/love.window.isDisplaySleepEnabled"
+  },
+  "love.window.isVisible":{
+    "description":"Checks if the game window is visible.\n\nThe window is considered visible if it's not minimized and the program isn't hidden.",
+    "snippet":"love.window.isVisible()",
+    "type":"function",
+    "url":"https://love2d.org/wiki/love.window.isVisible"
+  },
+  "love.window.maximize":{
+    "description":"Makes the window as large as possible.\n\nThis function has no effect if the window isn't resizable, since it essentially programmatically presses the window's \"maximize\" button.",
+    "snippet":"love.window.maximize()",
+    "type":"function",
+    "url":"https://love2d.org/wiki/love.window.maximize"
+  },
+  "love.window.minimize":{
+    "description":"Minimizes the window to the system's task bar / dock.",
+    "snippet":"love.window.minimize()",
+    "type":"function",
+    "url":"https://love2d.org/wiki/love.window.minimize"
+  },
+  "love.window.requestAttention":{
+    "description":"Causes the window to request the attention of the user if it is not in the foreground.\n\nIn Windows the taskbar icon will flash, and in OS X the dock icon will bounce.",
+    "snippet":"love.window.requestAttention(${1:continuous})",
+    "type":"function",
+    "url":"https://love2d.org/wiki/love.window.requestAttention"
+  },
+  "love.window.setDisplaySleepEnabled":{
+    "description":"Sets whether the display is allowed to sleep while the program is running.\n\nDisplay sleep is disabled by default. Some types of input (e.g. joystick button presses) might not prevent the display from sleeping, if display sleep is allowed.",
+    "snippet":"love.window.setDisplaySleepEnabled(${1:enable})",
+    "type":"function",
+    "url":"https://love2d.org/wiki/love.window.setDisplaySleepEnabled"
+  },
+  "love.window.setFullscreen":{
+    "description":"Enters or exits fullscreen. The display to use when entering fullscreen is chosen based on which display the window is currently in, if multiple monitors are connected.\n\nIf fullscreen mode is entered and the window size doesn't match one of the monitor's display modes (in normal fullscreen mode) or the window size doesn't match the desktop size (in 'desktop' fullscreen mode), the window will be resized appropriately. The window will revert back to its original size again when fullscreen mode is exited using this function.",
+    "snippet":"love.window.setFullscreen(${1:fullscreen})",
+    "type":"function",
+    "url":"https://love2d.org/wiki/love.window.setFullscreen"
+  },
+  "love.window.setIcon":{
+    "description":"Sets the window icon until the game is quit. Not all operating systems support very large icon images.",
+    "snippet":"love.window.setIcon(${1:imagedata})",
+    "type":"function",
+    "url":"https://love2d.org/wiki/love.window.setIcon"
+  },
+  "love.window.setMode":{
+    "description":"Sets the display mode and properties of the window.\n\nIf width or height is 0, setMode will use the width and height of the desktop.\n\nChanging the display mode may have side effects: for example, canvases will be cleared and values sent to shaders with Shader:send will be erased. Make sure to save the contents of canvases beforehand or re-draw to them afterward if you need to.",
+    "snippet":"love.window.setMode(${1:width}, ${2:height}, ${3:flags})",
+    "type":"function",
+    "url":"https://love2d.org/wiki/love.window.setMode"
+  },
+  "love.window.setPosition":{
+    "description":"Sets the position of the window on the screen.\n\nThe window position is in the coordinate space of the specified display.",
+    "snippet":"love.window.setPosition(${1:x}, ${2:y}, ${3:display})",
+    "type":"function",
+    "url":"https://love2d.org/wiki/love.window.setPosition"
+  },
+  "love.window.setTitle":{
+    "description":"Sets the window title.",
+    "snippet":"love.window.setTitle(${1:title})",
+    "type":"function",
+    "url":"https://love2d.org/wiki/love.window.setTitle"
+  },
+  "love.window.showMessageBox":{
+    "description":"Displays a message box dialog above the love window. The message box contains a title, optional text, and buttons.",
+    "snippet":"love.window.showMessageBox(${1:title}, ${2:message}, ${3:type}, ${4:attachtowindow})",
+    "type":"function",
+    "url":"https://love2d.org/wiki/love.window.showMessageBox"
+  },
+  "love.window.toPixels":{
+    "description":"Converts a number from density-independent units to pixels.\n\nThe pixel density inside the window might be greater (or smaller) than the \"size\" of the window. For example on a retina screen in Mac OS X with the highdpi window flag enabled, the window may take up the same physical size as an 800x600 window, but the area inside the window uses 1600x1200 pixels. love.window.toPixels(800) would return 1600 in that case.\n\nThis is used to convert coordinates from the size users are expecting them to display at onscreen to pixels. love.window.fromPixels does the opposite. The highdpi window flag must be enabled to use the full pixel density of a Retina screen on Mac OS X and iOS. The flag currently does nothing on Windows and Linux, and on Android it is effectively always enabled.\n\nMost LÖVE functions return values and expect arguments in terms of pixels rather than density-independent units.",
+    "snippet":"love.window.toPixels(${1:value})",
+    "type":"function",
+    "url":"https://love2d.org/wiki/love.window.toPixels"
+  }
+}

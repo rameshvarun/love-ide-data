@@ -1,0 +1,230 @@
+{
+  "t.accelerometerjoystick":{
+    "default":"true",
+    "description":"Sets whether the device accelerometer on iOS and Android should be exposed as a 3-axis Joystick. Disabling the accelerometer when it's not used may reduce CPU usage.",
+    "type":"boolean",
+    "url":"https://love2d.org/wiki/Config_Files#accelerometerjoystick"
+  },
+  "t.console":{
+    "default":"false",
+    "description":"Determines wether a console should be opened alongside the game window (Windows only) or not. Note: On OSX you can get console output by running LÖVE through the terminal.",
+    "type":"boolean",
+    "url":"https://love2d.org/wiki/Config_Files#console"
+  },
+  "t.externalstorage":{
+    "default":"false",
+    "description":"Sets whether files are saved in external storage (true) or internal storage (false) on Android.",
+    "type":"boolean",
+    "url":"https://love2d.org/wiki/Config_Files#externalstorage"
+  },
+  "t.gammacorrect":{
+    "default":"false",
+    "description":"Determines whether gamma-correct rendering is enabled, when the system supports it.",
+    "type":"boolean",
+    "url":"https://love2d.org/wiki/Config_Files#gammacorrect"
+  },
+  "t.identity":{
+    "default":"nil",
+    "description":"This flag determines the name of the save directory for your game. Note that you can only specify the name, not the location where it will be created:\nt.identity = \"gabe_HL3\" -- Correct\n\nt.identity = \"c:/Users/gabe/HL3\" -- Incorrect\nAlternatively love.filesystem.setIdentity can be used to set the save directory outside of the config file.",
+    "type":"string",
+    "url":"https://love2d.org/wiki/Config_Files#identity"
+  },
+  "t.modules.audio":{
+    "default":"true",
+    "description":"Enable the audio module.",
+    "type":"boolean",
+    "url":"https://love2d.org/wiki/Config_Files#modules.audio"
+  },
+  "t.modules.event":{
+    "default":"true",
+    "description":"Enable the event module.",
+    "type":"boolean",
+    "url":"https://love2d.org/wiki/Config_Files#modules.event"
+  },
+  "t.modules.graphics":{
+    "default":"true",
+    "description":"Enable the graphics module.",
+    "type":"boolean",
+    "url":"https://love2d.org/wiki/Config_Files#modules.graphics"
+  },
+  "t.modules.image":{
+    "default":"true",
+    "description":"Enable the image module.",
+    "type":"boolean",
+    "url":"https://love2d.org/wiki/Config_Files#modules.image"
+  },
+  "t.modules.joystick":{
+    "default":"true",
+    "description":"Enable the joystick module.",
+    "type":"boolean",
+    "url":"https://love2d.org/wiki/Config_Files#modules.joystick"
+  },
+  "t.modules.keyboard":{
+    "default":"true",
+    "description":"Enable the keyboard module.",
+    "type":"boolean",
+    "url":"https://love2d.org/wiki/Config_Files#modules.keyboard"
+  },
+  "t.modules.math":{
+    "default":"true",
+    "description":"Enable the math module.",
+    "type":"boolean",
+    "url":"https://love2d.org/wiki/Config_Files#modules.math"
+  },
+  "t.modules.mouse":{
+    "default":"true",
+    "description":"Enable the mouse module.",
+    "type":"boolean",
+    "url":"https://love2d.org/wiki/Config_Files#modules.mouse"
+  },
+  "t.modules.physics":{
+    "default":"true",
+    "description":"Enable the physics module.",
+    "type":"boolean",
+    "url":"https://love2d.org/wiki/Config_Files#modules.physics"
+  },
+  "t.modules.sound":{
+    "default":"true",
+    "description":"Enable the sound module.",
+    "type":"boolean",
+    "url":"https://love2d.org/wiki/Config_Files#modules.sound"
+  },
+  "t.modules.system":{
+    "default":"true",
+    "description":"Enable the system module.",
+    "type":"boolean",
+    "url":"https://love2d.org/wiki/Config_Files#modules.system"
+  },
+  "t.modules.thread":{
+    "default":"true",
+    "description":"Enable the thread module.",
+    "type":"boolean",
+    "url":"https://love2d.org/wiki/Config_Files#modules.thread"
+  },
+  "t.modules.timer":{
+    "default":"true",
+    "description":"Enable the timer module.",
+    "type":"boolean",
+    "url":"https://love2d.org/wiki/Config_Files#modules.timer"
+  },
+  "t.modules.touch":{
+    "default":"true",
+    "description":"Enable the touch module.",
+    "type":"boolean",
+    "url":"https://love2d.org/wiki/Config_Files#modules.touch"
+  },
+  "t.modules.video":{
+    "default":"true",
+    "description":"Enable the video module.",
+    "type":"boolean",
+    "url":"https://love2d.org/wiki/Config_Files#modules.video"
+  },
+  "t.modules.window":{
+    "default":"true",
+    "description":"Enable the window module.",
+    "type":"boolean",
+    "url":"https://love2d.org/wiki/Config_Files#modules.window"
+  },
+  "t.version":{
+    "default":"\"0.10.1\"",
+    "description":"t.version should be a string, representing the version of LÖVE for which your game was made. It should be formatted as \"X.Y.Z\" where X is the major release number, Y the minor, and Z the patch level. It allows LÖVE to display a warning if it isn't compatible. Its default is the version of LÖVE running.",
+    "type":"string",
+    "url":"https://love2d.org/wiki/Config_Files#version"
+  },
+  "t.window.borderless":{
+    "default":"false",
+    "description":"Removes all border visuals from the window. Note that the effects may wary between operating systems.",
+    "type":"boolean",
+    "url":"https://love2d.org/wiki/Config_Files#window.borderless"
+  },
+  "t.window.display":{
+    "default":"1",
+    "description":"The index of the display to show the window in, if multiple monitors are available.",
+    "type":"number",
+    "url":"https://love2d.org/wiki/Config_Files#window.display"
+  },
+  "t.window.fullscreen":{
+    "default":"false",
+    "description":"Wether to run the game in fullscreen (true) or windowed (false) mode. The fullscreen can also be toggled via love.window.setFullscreen or love.window.setMode.",
+    "type":"boolean",
+    "url":"https://love2d.org/wiki/Config_Files#window.fullscreen"
+  },
+  "t.window.fullscreentype":{
+    "default":"\"desktop\"",
+    "description":"Specifies the type of fullscreen mode to use (normal or desktop). Generally the desktop is recommended, as it is less restrictive than normal mode on some operating systems.",
+    "type":"string",
+    "url":"https://love2d.org/wiki/Config_Files#window.fullscreentype"
+  },
+  "t.window.height":{
+    "default":"600",
+    "description":"Sets the window's dimensions. If these flags are set to 0 LÖVE automatically uses the user's desktop dimensions.",
+    "type":"string",
+    "url":"https://love2d.org/wiki/Config_Files#window.height"
+  },
+  "t.window.highdpi":{
+    "default":"false",
+    "description":"See love.window.getPixelScale, love.window.toPixels, and love.window.fromPixels. It is recommended to keep this option disabled if you can't test your game on a Mac or iOS system with a Retina display, because code will need tweaking to make sure things look correct.",
+    "type":"boolean",
+    "url":"https://love2d.org/wiki/Config_Files#window.highdpi"
+  },
+  "t.window.icon":{
+    "default":"nil",
+    "description":"A filepath to an image to use as the window's icon. Not all operating systems support very large icon images. The icon can also be changed with love.window.setIcon.",
+    "type":"string",
+    "url":"https://love2d.org/wiki/Config_Files#window.icon"
+  },
+  "t.window.minheight":{
+    "default":"1",
+    "description":"Sets the minimum width and height for the game's window if it can be resized by the user. If you set lower values to window.width and window.height LÖVE will always favor the minimum dimensions set via window.minwidth and window.minheight.",
+    "type":"number",
+    "url":"https://love2d.org/wiki/Config_Files#window.minheight"
+  },
+  "t.window.minwidth":{
+    "default":"1",
+    "description":"Sets the minimum width and height for the game's window if it can be resized by the user. If you set lower values to window.width and window.height LÖVE will always favor the minimum dimensions set via window.minwidth and window.minheight.",
+    "type":"number",
+    "url":"https://love2d.org/wiki/Config_Files#window.minwidth"
+  },
+  "t.window.msaa":{
+    "default":"0",
+    "description":"The number of samples to use with multi-sampled antialiasing.",
+    "type":"number",
+    "url":"https://love2d.org/wiki/Config_Files#window.msaa"
+  },
+  "t.window.resizable":{
+    "default":"false",
+    "description":"If set to true this allows the user to resize the game's window.",
+    "type":"boolean",
+    "url":"https://love2d.org/wiki/Config_Files#window.resizable"
+  },
+  "t.window.title":{
+    "default":"\"Untitled\"",
+    "description":"Sets the title of the window the game is in. Alternatively love.window.setTitle can be used to change the window title outside of the config file.",
+    "type":"string",
+    "url":"https://love2d.org/wiki/Config_Files#window.title"
+  },
+  "t.window.vsync":{
+    "default":"true",
+    "description":"Enables or deactivates vertical synchronization. Vsync tries to keep the game at a steady framerate and can prevent issues like screen tearing. It is recommended to keep vsync activated if you don't know about the possible implications of turning it off.",
+    "type":"boolean",
+    "url":"https://love2d.org/wiki/Config_Files#window.vsync"
+  },
+  "t.window.width":{
+    "default":"800",
+    "description":"Sets the window's dimensions. If these flags are set to 0 LÖVE automatically uses the user's desktop dimensions.",
+    "type":"number",
+    "url":"https://love2d.org/wiki/Config_Files#window.width"
+  },
+  "t.window.x":{
+    "default":"nil",
+    "description":"Determines the position of the window on the user's screen. Alternatively love.window.setPosition can be used to change the position on the fly.",
+    "type":"number",
+    "url":"https://love2d.org/wiki/Config_Files#window.x"
+  },
+  "t.window.y":{
+    "default":"nil",
+    "description":"Determines the position of the window on the user's screen. Alternatively love.window.setPosition can be used to change the position on the fly.",
+    "type":"number",
+    "url":"https://love2d.org/wiki/Config_Files#window.y"
+  }
+}
