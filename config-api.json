@@ -7,7 +7,7 @@
   },
   "t.console":{
     "default":"false",
-    "description":"Determines wether a console should be opened alongside the game window (Windows only) or not. Note: On OSX you can get console output by running LÖVE through the terminal.",
+    "description":"Determines whether a console should be opened alongside the game window (Windows only) or not. Note: On OSX you can get console output by running LÖVE through the terminal.",
     "type":"boolean",
     "url":"https://love2d.org/wiki/Config_Files#console"
   },
@@ -126,7 +126,7 @@
     "url":"https://love2d.org/wiki/Config_Files#modules.window"
   },
   "t.version":{
-    "default":"\"0.10.1\"",
+    "default":"\"11.1\"",
     "description":"t.version should be a string, representing the version of LÖVE for which your game was made. It should be formatted as \"X.Y.Z\" where X is the major release number, Y the minor, and Z the patch level. It allows LÖVE to display a warning if it isn't compatible. Its default is the version of LÖVE running.",
     "type":"string",
     "url":"https://love2d.org/wiki/Config_Files#version"
@@ -145,7 +145,7 @@
   },
   "t.window.fullscreen":{
     "default":"false",
-    "description":"Wether to run the game in fullscreen (true) or windowed (false) mode. The fullscreen can also be toggled via love.window.setFullscreen or love.window.setMode.",
+    "description":"Whether to run the game in fullscreen (true) or windowed (false) mode. The fullscreen can also be toggled via love.window.setFullscreen or love.window.setMode.",
     "type":"boolean",
     "url":"https://love2d.org/wiki/Config_Files#window.fullscreen"
   },

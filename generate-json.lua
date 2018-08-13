@@ -46,7 +46,9 @@ end
 
 function process_function(modulename, func)
   local funcname = modulename .. '.' .. func.name
-  local args = format_function_args(func.variants[1])
+  
+  local variants = func.variants or {{}}
+  local args = format_function_args(variants[1])
 
   local snippet = funcname .. "(" .. args .. ")"
   API[funcname] = {
@@ -107,16 +109,19 @@ end
 
 -- Generate data for all of the callbacks.
 for i, callback in ipairs(loveapi.callbacks) do
-  local name = 'love.' .. callback.name
-  local args = format_function_args(callback.variants[1])
+  if callback.name == "conf" then process_conf(callback.variants[1].arguments[1])
+  else
+	  local name = 'love.' .. callback.name
+	  local args = format_function_args(callback.variants[1])
 
-  local snippet = "function " .. name .. "(" .. args .. ")\n\t${0:-- body...}\nend"
-  API[name] = {
-    type = 'callback',
-    description = callback.description,
-    url = WIKI_ROOT .. name,
-    snippet = snippet
-  }
+	  local snippet = "function " .. name .. "(" .. args .. ")\n\t${0:-- body...}\nend"
+	  API[name] = {
+	    type = 'callback',
+	    description = callback.description,
+	    url = WIKI_ROOT .. name,
+	    snippet = snippet
+	  }
+  end
 end
 
 -- Write out the API data.
